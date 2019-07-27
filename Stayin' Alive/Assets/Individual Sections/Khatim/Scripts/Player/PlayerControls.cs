@@ -12,14 +12,17 @@ public class PlayerControls : MonoBehaviour
     [Header("Player Gravity Variables")]
     [SerializeField] private float defaultGravity;
 
-    public delegate void SendEvents();
+    [Header("Player Collider")]
+    [SerializeField] private Collider playerCol;
+
+    public delegate void SendEvents(GameObject obj);
+    public static event SendEvents onDetectiveUIEnable;
 
     private float gravity;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController charController;
     private float moveHorizontal;
     private float moveVertical;
-
 
     void OnEnable()
     {
@@ -45,5 +48,32 @@ public class PlayerControls : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
 
         charController.Move(moveDirection * walkingSpeed * Time.deltaTime);
+
+        if (playerCol != null && Input.GetKey(KeyCode.E) && playerCol.tag == "Pickup")
+        {
+            if (onDetectiveUIEnable != null)
+            {
+                onDetectiveUIEnable(playerCol.gameObject);
+                Debug.Log("Object Picked Up");
+            }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Pickup")
+        {
+            playerCol = other;
+            Debug.Log("Trash Reference Added");
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Pickup")
+        {
+            playerCol = null;
+            Debug.Log("Trash Reference Removed");
+        }
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - VCam
   - VCam2
   - VCam3
+  - Pickup
   layers:
   - Default
   - TransparentFX
