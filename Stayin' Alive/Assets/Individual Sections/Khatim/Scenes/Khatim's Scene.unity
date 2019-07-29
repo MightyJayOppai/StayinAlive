@@ -170,7 +170,7 @@ MonoBehaviour:
   detectiveObjPos: {fileID: 521974265}
   upscaleValue: {x: 500, y: 500, z: 500}
   isInDetectiveMode: 0
-  rotateSpeed: 0
+  rotateSpeed: 200
 --- !u!1 &207741492
 GameObject:
   m_ObjectHideFlags: 0

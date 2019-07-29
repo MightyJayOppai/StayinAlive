@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
-                rotatingObj.transform.Rotate(Vector3.up, -rotateX);
-                rotatingObj.transform.Rotate(Vector3.right, rotateY);
+                rotatingObj.transform.Rotate(Vector3.up, -rotateX * rotateSpeed * Time.deltaTime);
+                rotatingObj.transform.Rotate(rotatingObj.transform.right, -rotateY * rotateSpeed * Time.deltaTime);
             }
         }
     }
