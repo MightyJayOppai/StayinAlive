@@ -589,6 +589,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Office
       objectReference: {fileID: 0}
+    - target: {fileID: -6317849961363100354, guid: 30943b6f962b6e2459e6ab550b4693d6,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7951969393320453730, guid: 30943b6f962b6e2459e6ab550b4693d6,
         type: 3}
       propertyPath: m_Icon
@@ -2024,13 +2030,19 @@ MonoBehaviour:
     roll: 0
   - position: {x: -18.93657, y: 0, z: -1.2758694}
     roll: 0
-  - position: {x: -18.983177, y: 0, z: -7.0385895}
+  - position: {x: -18.983177, y: 0, z: -4.035118}
     roll: 0
-  - position: {x: -19.029785, y: 0, z: -13.434582}
+  - position: {x: -18.897713, y: -0.0025119781, z: -8.801964}
     roll: 0
-  - position: {x: -16.077316, y: 0, z: -15.159748}
+  - position: {x: -18.882416, y: 0, z: -13.434582}
+    roll: 0
+  - position: {x: -17.014725, y: 0, z: -15.159748}
+    roll: 0
+  - position: {x: -14.131264, y: -0.03507471, z: -15.294712}
     roll: 0
   - position: {x: -10.971237, y: 0, z: -15.305698}
+    roll: 0
+  - position: {x: -8.975838, y: 0.1350441, z: -15.38842}
     roll: 0
   - position: {x: -6.7761307, y: 0, z: -15.451649}
     roll: 0
