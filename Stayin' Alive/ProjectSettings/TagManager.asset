@@ -12,6 +12,8 @@ TagManager:
   - AreaB2
   - AreaC1
   - AreaC2
+  - AreaC3
+  - AreaD3
   layers:
   - Default
   - TransparentFX

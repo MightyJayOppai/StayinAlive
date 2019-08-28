@@ -10,6 +10,8 @@ public class VCamManager : MonoBehaviour
     [SerializeField] private GameObject vCamB3;
     [SerializeField] private GameObject vCamC1;
     [SerializeField] private GameObject vCamC2Pan;
+    [SerializeField] private GameObject vCamC3;
+    [SerializeField] private GameObject vCamD3;
 
     void OnTriggerEnter(Collider other)
     {
@@ -55,7 +57,23 @@ public class VCamManager : MonoBehaviour
         {
             vCamC2Pan.SetActive(true);
             vCamC1.SetActive(false);
+            vCamC3.SetActive(false);
             Debug.Log("Cam Switched to VCamC2");
+        }
+
+        if (other.tag == "AreaC3")
+        {
+            vCamC3.SetActive(true);
+            vCamC2Pan.SetActive(false);
+            vCamD3.SetActive(false);
+            Debug.Log("Cam Switched to VCamC3");
+        }
+
+        if (other.tag == "AreaD3")
+        {
+            vCamD3.SetActive(true);
+            vCamC2Pan.SetActive(false);
+            Debug.Log("Cam Switched to VCamD3");
         }
     }
 }
