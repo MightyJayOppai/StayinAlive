@@ -2048,6 +2048,7 @@ MonoBehaviour:
   defaultGravity: 9.81
   flashSpeed: 0
   defaultRunningSpeed: 0
+  input: 1
 --- !u!114 &992003817
 MonoBehaviour:
   m_ObjectHideFlags: 0
