@@ -64,8 +64,8 @@ public class PlayerControls : MonoBehaviour
         {
             if (moveDirectionJoy != Vector2.zero)
             {
-                moveHorizontal = moveDirectionJoy.x;
-                moveVertical = moveDirectionJoy.y;
+                moveHorizontal = moveDirectionJoy.y;
+                moveVertical = moveDirectionJoy.x;
             }
             else
             {
@@ -77,7 +77,7 @@ public class PlayerControls : MonoBehaviour
 
         if (charController.isGrounded)
         {
-            moveDirection = new Vector3(moveVertical, 0f, moveHorizontal);
+            moveDirection = new Vector3(-moveVertical, 0f, -moveHorizontal);
             moveDirection = moveDirection.normalized;
 
             if (moveDirection != Vector3.zero)
