@@ -14,6 +14,7 @@ TagManager:
   - AreaC2
   - AreaC3
   - AreaD3
+  - Ground
   layers:
   - Default
   - TransparentFX

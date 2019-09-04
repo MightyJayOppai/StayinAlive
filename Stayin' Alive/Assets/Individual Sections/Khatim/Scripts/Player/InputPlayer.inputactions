@@ -1,0 +1,52 @@
+{
+    "name": "InputPlayer",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "b9387954-17be-4fc3-a2a4-bf9bced3a61a",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Button",
+                    "id": "d74061f3-bbaa-4c2d-a738-f824c72f4965",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Test",
+                    "type": "Button",
+                    "id": "0026389c-96ba-4040-8715-595bab378c24",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1ad4b6c4-7732-4b8b-a569-3b79e0fb163b",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "942c67fb-7fbf-47ee-b901-0ed21297f10f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
