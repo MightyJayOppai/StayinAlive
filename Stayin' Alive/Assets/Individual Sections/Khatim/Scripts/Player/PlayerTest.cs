@@ -9,7 +9,7 @@ public class PlayerTest : MonoBehaviour
     [SerializeField] private float playerSpeed = 0f;
     private float heading = 0f;
     [SerializeField] private Transform camPos;
-    Vector2 playerInput;
+    private Vector2 playerInput;
 
     void Update()
     {
