@@ -8,17 +8,43 @@ public class PlayerTest : MonoBehaviour
     [SerializeField] private Transform camPivot;
     [SerializeField] private float playerSpeed = 0f;
     private float heading = 0f;
+    [SerializeField] private bool isStopped;
+    [SerializeField] private float currTime;
+    [SerializeField] private float stoppingTime;
     [SerializeField] private Transform camPos;
-    private Vector2 playerInput;
+    private Vector2 input;
+    private CharacterController charControllerTest;
+
+    void OnEnable()
+    {
+        VCamManager.onPlayerStop += OnPlayerStoppedEventReceived;
+    }
+
+    void OnDisable()
+    {
+        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
+    }
+
+    void OnDestroy()
+    {
+        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
+    }
+
+    void Start()
+    {
+        charControllerTest = GetComponent<CharacterController>();
+    }
 
     void Update()
     {
-        heading += Input.GetAxis("Mouse X");
         if (camPivot != null)
+        {
+            heading += Input.GetAxis("Mouse X");
             camPivot.rotation = Quaternion.Euler(0f, heading, 0f);
+        }
 
-        playerInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        playerInput = Vector2.ClampMagnitude(playerInput, 1);
+        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        input = Vector2.ClampMagnitude(input, 1);
 
         Vector3 camForward = camPos.forward;
         Vector3 camRight = camPos.right;
@@ -28,7 +54,26 @@ public class PlayerTest : MonoBehaviour
         camForward = camForward.normalized;
         camRight = camRight.normalized;
 
-        // transform.position += new Vector3(playerInput.x, 0f, playerInput.y) * Time.deltaTime * playerSpeed;
-        transform.position += (camForward * playerInput.y + camRight * playerInput.x) * Time.deltaTime * playerSpeed;
+        Vector3 playerVector = camForward * input.y + camRight * input.x;
+
+
+        if (!isStopped)
+            charControllerTest.Move(playerVector * playerSpeed * Time.deltaTime);
+        // transform.position += (camForward * input.y + camRight * input.x) * Time.deltaTime * playerSpeed;
+        else
+        {
+            currTime += Time.deltaTime;
+
+            if (currTime >= stoppingTime)
+            {
+                isStopped = false;
+                currTime = 0f;
+            }
+        }
+    }
+
+    void OnPlayerStoppedEventReceived()
+    {
+        isStopped = true;
     }
 }

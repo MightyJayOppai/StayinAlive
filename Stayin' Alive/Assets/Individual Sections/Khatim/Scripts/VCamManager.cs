@@ -13,6 +13,9 @@ public class VCamManager : MonoBehaviour
     [SerializeField] private GameObject vCamC3;
     [SerializeField] private GameObject vCamD3;
 
+    public delegate void SendEvents();
+    public static event SendEvents onPlayerStop;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "AreaA1")
@@ -74,6 +77,33 @@ public class VCamManager : MonoBehaviour
             vCamD3.SetActive(true);
             vCamC2Pan.SetActive(false);
             Debug.Log("Cam Switched to VCamD3");
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "AreaA1")
+        {
+            if (onPlayerStop != null)
+                onPlayerStop();
+        }
+
+        if (other.tag == "AreaA2")
+        {
+            if (onPlayerStop != null)
+                onPlayerStop();
+        }
+
+        if (other.tag == "AreaB1")
+        {
+            if (onPlayerStop != null)
+                onPlayerStop();
+        }
+
+        if (other.tag == "AreaB2")
+        {
+            if (onPlayerStop != null)
+                onPlayerStop();
         }
     }
 }

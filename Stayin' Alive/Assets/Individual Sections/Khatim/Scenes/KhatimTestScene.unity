@@ -2050,7 +2050,7 @@ GameObject:
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2162,11 +2162,8 @@ MonoBehaviour:
   runningSpeed: 8
   rotationSpeed: 6
   defaultGravity: 2
-  flashSpeed: 0
-  defaultRunningSpeed: 0
-  moveHorizontal: 0
-  moveVertical: 0
   input: 0
+  camPos: {fileID: 0}
 --- !u!114 &992003817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2223,6 +2220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPivot: {fileID: 0}
   playerSpeed: 5
+  isStopped: 0
+  currTime: 0
+  stoppingTime: 0
   camPos: {fileID: 1096148103}
 --- !u!1001 &996853143
 PrefabInstance:
@@ -3439,6 +3439,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPivot: {fileID: 9979541}
   playerSpeed: 5
+  isStopped: 0
+  currTime: 0
+  stoppingTime: 0
   camPos: {fileID: 57838593}
 --- !u!1 &1777010480
 GameObject:
