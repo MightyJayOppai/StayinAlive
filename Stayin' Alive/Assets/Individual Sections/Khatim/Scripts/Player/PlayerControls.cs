@@ -26,6 +26,9 @@ public class PlayerControls : MonoBehaviour
 
     [Header("Cam Variables")]
     [SerializeField] private Transform camPos;
+    [SerializeField] private bool isStopped;
+    [SerializeField] private float currTime;
+    [SerializeField] private float stoppingTime;
 
     // Watch this video https://www.youtube.com/watch?v=bV1sB2vHDAw and https://forum.unity.com/threads/moving-character-relative-to-camera.383086/
 
@@ -45,12 +48,19 @@ public class PlayerControls : MonoBehaviour
 
     void OnEnable()
     {
+        VCamManager.onPlayerStop += OnPlayerStoppedEventReceived;
         playerInput.Player.Enable();
     }
 
     void OnDisable()
     {
+        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
         playerInput.Player.Disable();
+    }
+
+    void OnDestroy()
+    {
+        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
     }
 
     void Update()
@@ -80,11 +90,11 @@ public class PlayerControls : MonoBehaviour
 
         if (charController.isGrounded)
         {
-            moveDirection = new Vector3(-moveVertical, 0f, moveHorizontal);
+            moveDirection = new Vector3(moveVertical, 0f, moveHorizontal);
             moveDirection = moveDirection.normalized;
 
-            if (moveDirection != Vector3.zero)
-                transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(moveDirection), rotationSpeed * Time.deltaTime);
+            // if (moveDirection != Vector3.zero)
+            //     transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(moveDirection), rotationSpeed * Time.deltaTime);
 
             Vector3 camForward = camPos.forward;
             Vector3 camRight = camPos.right;
@@ -93,14 +103,29 @@ public class PlayerControls : MonoBehaviour
             camForward = camForward.normalized;
             camRight = camRight.normalized;
 
-            playerVector = camRight * moveDirection.z + camForward * moveDirection.x;
+            playerVector = camForward * moveDirection.z + camRight * moveDirection.x;
             playerVector = playerVector.normalized;
         }
         else
             playerVector.y -= gravity * Time.deltaTime;
 
-
-        charController.Move(playerVector * walkingSpeed * Time.deltaTime);
+        if (!isStopped)
+            charController.Move(playerVector * walkingSpeed * Time.deltaTime);
         // charController.Move(moveDirection * walkingSpeed * Time.deltaTime);
+        else
+        {
+            currTime += Time.deltaTime;
+
+            if (currTime >= stoppingTime)
+            {
+                isStopped = false;
+                currTime = 0f;
+            }
+        }
+    }
+
+    void OnPlayerStoppedEventReceived()
+    {
+        isStopped = true;
     }
 }
