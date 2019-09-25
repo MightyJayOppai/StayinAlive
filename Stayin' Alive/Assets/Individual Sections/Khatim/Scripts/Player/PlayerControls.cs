@@ -94,7 +94,7 @@ public class PlayerControls : MonoBehaviour
             moveDirection = moveDirection.normalized;
 
             // if (moveDirection != Vector3.zero)
-            //     transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(moveDirection), rotationSpeed * Time.deltaTime);
+            //     transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(-moveDirection), rotationSpeed * Time.deltaTime);
 
             Vector3 camForward = camPos.forward;
             Vector3 camRight = camPos.right;
@@ -110,7 +110,12 @@ public class PlayerControls : MonoBehaviour
             playerVector.y -= gravity * Time.deltaTime;
 
         if (!isStopped)
+        {
             charController.Move(playerVector * walkingSpeed * Time.deltaTime);
+
+            if (playerVector != Vector3.zero)
+                transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
+        }
         // charController.Move(moveDirection * walkingSpeed * Time.deltaTime);
         else
         {

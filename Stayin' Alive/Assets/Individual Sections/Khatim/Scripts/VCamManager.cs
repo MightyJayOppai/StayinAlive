@@ -82,11 +82,11 @@ public class VCamManager : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "AreaA1")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
+        // if (other.tag == "AreaA1")
+        // {
+        //     if (onPlayerStop != null)
+        //         onPlayerStop();
+        // }
 
         if (other.tag == "AreaA2")
         {
