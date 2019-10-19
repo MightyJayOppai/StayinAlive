@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Individual Sections/Ajay/Scenes/AjayMainScene/AjayMainScene.unity
+    guid: 01f5e2276eb76d947adc283c3fdfc5d1
+  - enabled: 1
+    path: Assets/Individual Sections/Ajay/Scenes/AjayTestScene/AjayTestScene.unity
+    guid: e39198f4f87931b4e94404ac211ab0aa
   m_configObjects: {}

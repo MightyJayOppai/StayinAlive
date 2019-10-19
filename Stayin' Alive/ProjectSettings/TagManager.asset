@@ -15,6 +15,12 @@ TagManager:
   - AreaC3
   - AreaD3
   - Ground
+  - DayTimer
+  - AreaB3
+  - AreaB4Pan
+  - AreaD1
+  - AreaD2
+  - Clue
   layers:
   - Default
   - TransparentFX
