@@ -27943,6 +27943,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3684092759890704459, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3684092759890704459, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: Corridor Hallway_004 (With Window)
+      objectReference: {fileID: 0}
     - target: {fileID: 6063890336475001001, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_IsActive
@@ -27972,6 +27982,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3461521856382677750, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: LongOfficeWall_001 (With Window)
+      objectReference: {fileID: 0}
+    - target: {fileID: -936717178237508287, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -936717178237508287, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: DetectiveOfficeWallV2_001 (With Window)
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
@@ -33594,10 +33619,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6063890336475001001, guid: a8ad84e47409c8c41bab5e40817b5742,
+        type: 3}
+      propertyPath: m_Name
+      value: Corridor Hallway_002 (No Window)
+      objectReference: {fileID: 0}
     - target: {fileID: 6954413070749441491, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6145731299169082750, guid: a8ad84e47409c8c41bab5e40817b5742,
+        type: 3}
+      propertyPath: m_Name
+      value: CorridorHallwayToMainOffice_001
       objectReference: {fileID: 0}
     - target: {fileID: -5406198054699974796, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
