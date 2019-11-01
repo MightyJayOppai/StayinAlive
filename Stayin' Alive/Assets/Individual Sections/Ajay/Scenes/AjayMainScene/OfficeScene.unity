@@ -21850,6 +21850,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3477239503503638451, guid: 72f2f2ab71c308244b95d20c68b27bc2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497800742670868752, guid: 72f2f2ab71c308244b95d20c68b27bc2,
         type: 3}
       propertyPath: m_IsActive
@@ -21876,6 +21881,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 72614970410354841, guid: 72f2f2ab71c308244b95d20c68b27bc2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2441666805359945961, guid: 72f2f2ab71c308244b95d20c68b27bc2,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -27968,6 +27978,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 562090704800205705, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: DetectiveOfficeWall_002 (With Window)
+      objectReference: {fileID: 0}
     - target: {fileID: -5416681291613652736, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_IsActive
@@ -27982,6 +27997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8938866556569923485, guid: cfec01c61c00371428a8c7ee0c89cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: Floor_Office_001
       objectReference: {fileID: 0}
     - target: {fileID: -3461521856382677750, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
@@ -28057,7 +28077,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b0d469e006ad2554e8d45f8fc9ed621f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4df0333331a73db48a16b7a8db2d6987, type: 2}
     - target: {fileID: -649345288084458860, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -28112,17 +28132,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e7fbc98e9acdd542b9c1b3cec3f210d, type: 2}
+      objectReference: {fileID: 2100000, guid: 95602911437accd42b830c3553094ead, type: 2}
     - target: {fileID: -420972871483435892, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 008fb5e8ae5b56545887f7fea36605b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 3c633a2c7a10ad84abde29e18e8264ee, type: 2}
     - target: {fileID: -420972871483435892, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2b6ab3f41aa771f439f705de8fb2bb0b, type: 2}
+      objectReference: {fileID: 2100000, guid: 7c61f84f2b756e94d9d1388242fc42ca, type: 2}
     - target: {fileID: 8943826554687733460, guid: cfec01c61c00371428a8c7ee0c89cd2b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -33634,6 +33654,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorridorHallwayToMainOffice_001
       objectReference: {fileID: 0}
+    - target: {fileID: -5416681291613652736, guid: a8ad84e47409c8c41bab5e40817b5742,
+        type: 3}
+      propertyPath: m_Name
+      value: SmallDetectiveOfficeWall_001 (No Window)
+      objectReference: {fileID: 0}
+    - target: {fileID: -156244236554063220, guid: a8ad84e47409c8c41bab5e40817b5742,
+        type: 3}
+      propertyPath: m_Name
+      value: DetectiveOfficeWall_001 (No Window)
+      objectReference: {fileID: 0}
     - target: {fileID: -5406198054699974796, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -33728,12 +33758,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 08577247f904dc64fba3c6a842674d02, type: 2}
+      objectReference: {fileID: 2100000, guid: e93ce006242324949a57189dbdaa8d2c, type: 2}
     - target: {fileID: -2513458342960925722, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 08577247f904dc64fba3c6a842674d02, type: 2}
+      objectReference: {fileID: 2100000, guid: 142d592efc1b5aa45b3d0bfc90bf2e84, type: 2}
     - target: {fileID: -2513458342960925722, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_CastShadows
@@ -33803,12 +33833,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 32427579223845644977f4037a68c1ad, type: 2}
+      objectReference: {fileID: 2100000, guid: 25d2d33b3d59c4748b22431729884447, type: 2}
     - target: {fileID: 7207783317569782536, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 32427579223845644977f4037a68c1ad, type: 2}
+      objectReference: {fileID: 2100000, guid: 31e1d68cefa4ea84e953f06f366b5843, type: 2}
     - target: {fileID: 7207783317569782536, guid: a8ad84e47409c8c41bab5e40817b5742,
         type: 3}
       propertyPath: m_CastShadows
@@ -45472,7 +45502,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e12a8476c6e082343bb840ef11d0644a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ebbe27c5b83ab947b90e2c7e9728237, type: 2}
     - target: {fileID: -1504981713932161579, guid: af534ebd3da4c44419affdb7558365b2,
         type: 3}
       propertyPath: m_CastShadows
@@ -47562,7 +47592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1928077019
 RectTransform:
   m_ObjectHideFlags: 0
