@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class CaseFileTransition : MonoBehaviour
 {
+    public GameObject transitionTextBG;
+    public GameObject transitionText;
     public GameObject sceneTransitionScreen;
     public Collider col;    
-    public GameObject transitionText;
     void Start()
     {
-        sceneTransitionScreen.SetActive(false);
+        transitionTextBG.SetActive(false);
         transitionText.SetActive(false);
+        sceneTransitionScreen.SetActive(false);
+
     }
 
     
@@ -19,12 +22,12 @@ public class CaseFileTransition : MonoBehaviour
     {
         if(col!= null && Input.GetKeyDown(KeyCode.E))
         {
-            sceneTransitionScreen.SetActive(!sceneTransitionScreen.activeSelf);
-            if (sceneTransitionScreen.activeSelf)
+            if (transitionTextBG.activeSelf)
             {
+                transitionTextBG.SetActive(!transitionTextBG.activeSelf);
+                sceneTransitionScreen.SetActive(true);
                 //GetComponent<MapSceneManager>().TransitionToAlleyway();
-                UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-                Debug.Log("Go to the Alleyway");
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(2);
             }
         }
     }
@@ -34,7 +37,7 @@ public class CaseFileTransition : MonoBehaviour
         if (other.tag == "Player")
         {
             col = other;
-            sceneTransitionScreen.SetActive(true);
+            transitionTextBG.SetActive(true);
             transitionText.SetActive(true);
         }
     }
@@ -45,8 +48,9 @@ public class CaseFileTransition : MonoBehaviour
         if (other.tag == "Player")
         {
             col = null;
-            sceneTransitionScreen.SetActive(false);
+            transitionTextBG.SetActive(false);
             transitionText.SetActive(false);
+            sceneTransitionScreen.SetActive(false);
         }
     }
 }
