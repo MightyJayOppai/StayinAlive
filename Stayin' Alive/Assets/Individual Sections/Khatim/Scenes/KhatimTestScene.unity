@@ -2121,7 +2121,6 @@ GameObject:
   - component: {fileID: 992003821}
   - component: {fileID: 992003815}
   - component: {fileID: 992003816}
-  - component: {fileID: 992003820}
   - component: {fileID: 992003819}
   - component: {fileID: 992003818}
   - component: {fileID: 992003817}
@@ -2291,19 +2290,6 @@ MonoBehaviour:
   currTime: 0
   stoppingTime: 0
   camPos: {fileID: 1096148103}
---- !u!114 &992003820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992003810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6a5db9dd5ed2642adfdd63cf4775ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactCol: {fileID: 0}
 --- !u!136 &992003821
 CapsuleCollider:
   m_ObjectHideFlags: 0

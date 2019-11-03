@@ -30,8 +30,6 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private float currTime;
     [SerializeField] private float stoppingTime;
 
-    [Header("Player Interaction")]
-    private PlayerInteraction plyInteract;
 
     // Watch this video https://www.youtube.com/watch?v=bV1sB2vHDAw and https://forum.unity.com/threads/moving-character-relative-to-camera.383086/
 
@@ -68,13 +66,6 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && plyInteract != null)
-            plyInteract.StartInteraction();
-        else if (Input.GetButton("Interact") && plyInteract != null)
-            plyInteract.UpdateInteraction();
-        if (Input.GetButtonUp("Interact") && plyInteract != null)
-            plyInteract.EndInteraction();
-
         if (input == InputType.Keyboard)
         {
             //Gets Player Inputs
@@ -140,39 +131,8 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Clue" && plyInteract == null)
-        {
-            plyInteract = GetComponent<CluePickup>();
-            plyInteract.interactCol = other;
-
-            if (Input.GetButton("Interact"))
-                plyInteract.StartInteraction();
-
-            Debug.Log("Clue Interaction Reference Added");
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (plyInteract != null)
-        {
-            if (other.tag == "Clue" && plyInteract.interactCol == other)
-                ResetInteraction();
-
-            Debug.Log("Interaction Script Reference Removed");
-        }
-    }
-
     void OnPlayerStoppedEventReceived()
     {
         isStopped = true;
-    }
-
-    void ResetInteraction()
-    {
-        plyInteract.interactCol = null;
-        plyInteract = null;
     }
 }
