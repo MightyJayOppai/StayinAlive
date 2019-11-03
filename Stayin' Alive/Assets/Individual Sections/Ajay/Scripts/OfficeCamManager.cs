@@ -11,8 +11,6 @@ public class OfficeCamManager : MonoBehaviour
     [SerializeField] private GameObject oCamB3;
     [SerializeField] private GameObject oCamB4Pan;
     [SerializeField] private GameObject oCamC1;
-    [SerializeField] private GameObject oCamC2;
-    [SerializeField] private GameObject oCamC3;
     [SerializeField] private GameObject oCamD1;
     [SerializeField] private GameObject oCamD2;
 
@@ -26,6 +24,7 @@ public class OfficeCamManager : MonoBehaviour
             oCamA1.SetActive(true);
             oCamA2.SetActive(false);
             oCamB1.SetActive(false);
+            oCamB2.SetActive(false);
             Debug.Log("Cam Switched to oCamA1");
         }
 
@@ -41,7 +40,9 @@ public class OfficeCamManager : MonoBehaviour
         if (other.tag == "AreaB1")
         {
             oCamB1.SetActive(true);
+            oCamB2.SetActive(false);
             oCamB3.SetActive(false);
+            oCamB4Pan.SetActive(false);
             oCamA2.SetActive(false);
             oCamA1.SetActive(false);
             Debug.Log("Cam Switched to oCamB1");
@@ -52,6 +53,7 @@ public class OfficeCamManager : MonoBehaviour
             oCamB2.SetActive(true);
             oCamB1.SetActive(false);
             oCamB3.SetActive(false);
+            oCamB4Pan.SetActive(false);
             oCamC1.SetActive(false);
             Debug.Log("Cam Switched to oCamB2");
         }
@@ -80,24 +82,8 @@ public class OfficeCamManager : MonoBehaviour
             oCamB1.SetActive(false);
             oCamB2.SetActive(false);
             oCamB3.SetActive(false);
-            oCamC2.SetActive(false);
+            oCamB4Pan.SetActive(false);
             Debug.Log("Cam Switched to oCamC1");
-        }
-
-        if (other.tag == "AreaC2")
-        {
-            oCamC2.SetActive(true);
-            oCamC1.SetActive(false);
-            oCamC3.SetActive(false);
-            Debug.Log("Cam Switched to oCamC2");
-        }
-
-        if (other.tag == "AreaC3")
-        {
-            oCamC3.SetActive(true);
-            oCamC2.SetActive(false);
-            oCamD1.SetActive(false);
-            Debug.Log("Cam Switched to oCamC3");
         }
 
         if (other.tag == "AreaD1")
