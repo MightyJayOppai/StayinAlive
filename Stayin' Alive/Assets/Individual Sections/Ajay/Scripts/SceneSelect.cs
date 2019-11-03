@@ -23,6 +23,7 @@ public class SceneSelect : MonoBehaviour
     }
     public void LoadMenu()
     {
+        Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         //Debug.Log("Loading Menu");
     }
