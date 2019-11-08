@@ -15,11 +15,11 @@ public class SceneSelect : MonoBehaviour
     }
     public void MoveToAlleyway()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(4);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(5);
     }
-    public void MoveToBasement()
+    public void MoveToHouse()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
     public void LoadMenu()
     {
