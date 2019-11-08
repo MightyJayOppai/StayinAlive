@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Individual Sections/Khatim/Scripts/Player/InputPlayer.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Individual Sections/Khatim/Scripts/Player/Movement/InputPlayer.inputactions'
 
 using System.Collections;
 using System.Collections.Generic;
