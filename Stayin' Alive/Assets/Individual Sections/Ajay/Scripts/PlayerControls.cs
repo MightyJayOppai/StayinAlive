@@ -30,6 +30,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private float currTime;
     [SerializeField] private float stoppingTime;
     public ClueLog clueLog;
+    public HUD Hud;
 
 
     // Watch this video https://www.youtube.com/watch?v=bV1sB2vHDAw and https://forum.unity.com/threads/moving-character-relative-to-camera.383086/
@@ -133,18 +134,39 @@ public class PlayerControls : MonoBehaviour
                 currTime = 0f;
             }
         }
+
+        if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
+        {
+            clueLog.AddItem(mItemToPickup);
+            mItemToPickup.OnPickUp();
+            Hud.CloseMessagePanel();
+        }
     }
 
     void OnPlayerStoppedEventReceived()
     {
         isStopped = true;
     }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    
+    private IClueItem mItemToPickup = null;
+    private void OnTriggerEnter(Collider other) 
     {
-        IClueItem item = hit.collider.GetComponent<IClueItem>();
+        IClueItem item = other.GetComponent<IClueItem>();
         if (item != null)
         {
-            clueLog.AddItem(item);
+            //clueLog.AddItem(item);
+            //item.OnPickUp();
+            mItemToPickup = item;
+            Hud.OpenMessagePanel("");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        IClueItem item = other.GetComponent<IClueItem>();
+        if (item != null)
+        {
+            mItemToPickup = null;
+            Hud.CloseMessagePanel();
         }
     }
 }

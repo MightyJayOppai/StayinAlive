@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3397566570758822561}
   - component: {fileID: 3199960742554664955}
   - component: {fileID: 4661569320506254716}
-  - component: {fileID: 4357354190086146911}
+  - component: {fileID: 7044158276630549750}
   - component: {fileID: 1535359010}
   m_Layer: 0
   m_Name: Clue (1)
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4357354190086146911
+--- !u!65 &7044158276630549750
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

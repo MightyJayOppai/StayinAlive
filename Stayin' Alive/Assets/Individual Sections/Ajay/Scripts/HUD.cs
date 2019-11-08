@@ -8,6 +8,7 @@ public class HUD : MonoBehaviour
     public ClueLog clueLog;
     public static bool clueLogIsDisplayed = false;
     public GameObject clueLogUI;
+    public GameObject MessagePanel;
     void Start()
     {
         clueLog.ItemAdded += ClueLogScript_ItemAdded;
@@ -57,5 +58,13 @@ public class HUD : MonoBehaviour
     {
         clueLogUI.SetActive(true);
         clueLogIsDisplayed = true;
+    }
+    public void OpenMessagePanel(string text)
+    {
+        MessagePanel.SetActive(true);
+    }
+    public void CloseMessagePanel()
+    {
+        MessagePanel.SetActive(false);
     }
 }
