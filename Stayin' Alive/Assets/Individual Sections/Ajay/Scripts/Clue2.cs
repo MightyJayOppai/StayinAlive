@@ -2,26 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Clue2 : MonoBehaviour, IClueItem
+public class Clue2 : ClueItemBase
 {
-    public string Name
+    public override string Name
     {
         get
         {
             return "Clue2";
         }
     }
-
-    public Sprite _Image;
-    public Sprite Image
+    public override void OnUse()
     {
-        get
-        {
-            return _Image;
-        }
-    }
-    public void OnPickUp()
-    {
-        gameObject.SetActive(false);
+        base.OnUse();
     }
 }

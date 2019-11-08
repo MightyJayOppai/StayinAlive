@@ -9,6 +9,7 @@ public interface IClueItem
     Sprite Image { get; }
     
     void OnPickUp();
+    void OnUse();
 }
 
 public class ClueEventArgs : EventArgs
