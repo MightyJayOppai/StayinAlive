@@ -29,6 +29,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private bool isStopped;
     [SerializeField] private float currTime;
     [SerializeField] private float stoppingTime;
+    public ClueLog clueLog;
 
 
     // Watch this video https://www.youtube.com/watch?v=bV1sB2vHDAw and https://forum.unity.com/threads/moving-character-relative-to-camera.383086/
@@ -137,5 +138,13 @@ public class PlayerControls : MonoBehaviour
     void OnPlayerStoppedEventReceived()
     {
         isStopped = true;
+    }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        IClueItem item = hit.collider.GetComponent<IClueItem>();
+        if (item != null)
+        {
+            clueLog.AddItem(item);
+        }
     }
 }

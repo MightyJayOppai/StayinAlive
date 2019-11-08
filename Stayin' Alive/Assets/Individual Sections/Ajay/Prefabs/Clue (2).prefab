@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2448830889563703941}
   - component: {fileID: 3139813875019513059}
   - component: {fileID: 545291011339229148}
+  - component: {fileID: 382807206}
   m_Layer: 0
   m_Name: Clue (2)
-  m_TagString: Untagged
+  m_TagString: Clue2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,3 +92,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &382807206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602295436195841965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9c26fa626a1564ea01931afcec06c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 5044d9e8f1ae4774f9dc24b10281b76d, type: 3}
