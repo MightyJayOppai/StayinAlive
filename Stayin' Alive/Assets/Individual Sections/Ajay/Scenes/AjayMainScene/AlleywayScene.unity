@@ -381,6 +381,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1764029021970743741, guid: ae15af6fceb7e954baad1b5a123a52b3,
+        type: 3}
+      propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: -3398937345809583902, guid: ae15af6fceb7e954baad1b5a123a52b3,
+        type: 3}
+      propertyPath: m_Name
+      value: Metal Door for Docking Bay
+      objectReference: {fileID: 0}
+    - target: {fileID: -8554155720914594456, guid: ae15af6fceb7e954baad1b5a123a52b3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -191701992798827990, guid: ae15af6fceb7e954baad1b5a123a52b3,
+        type: 3}
+      propertyPath: m_Name
+      value: Cover For Docking bay
+      objectReference: {fileID: 0}
+    - target: {fileID: -1142250042625128492, guid: ae15af6fceb7e954baad1b5a123a52b3,
+        type: 3}
+      propertyPath: m_Name
+      value: TRASHBAG_098
+      objectReference: {fileID: 0}
     - target: {fileID: -9202376156654626096, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -511,11 +536,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: f01c346ad1055394e9278a0912740bef, type: 2}
-    - target: {fileID: -8554155720914594456, guid: ae15af6fceb7e954baad1b5a123a52b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -8552647089168939827, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1109,7 +1129,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
@@ -1221,11 +1241,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: f01c346ad1055394e9278a0912740bef, type: 2}
-    - target: {fileID: -3398937345809583902, guid: ae15af6fceb7e954baad1b5a123a52b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Metal Door for Docking Bay
-      objectReference: {fileID: 0}
     - target: {fileID: -3249935469341209503, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1446,11 +1461,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 4309d4e05dac18440945f073deda7f91, type: 2}
-    - target: {fileID: -1142250042625128492, guid: ae15af6fceb7e954baad1b5a123a52b3,
-        type: 3}
-      propertyPath: m_Name
-      value: TRASHBAG_098
-      objectReference: {fileID: 0}
     - target: {fileID: -1129474359860298311, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -1591,11 +1601,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: f01c346ad1055394e9278a0912740bef, type: 2}
-    - target: {fileID: -191701992798827990, guid: ae15af6fceb7e954baad1b5a123a52b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Cover For Docking bay
-      objectReference: {fileID: 0}
     - target: {fileID: -81728342618266184, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1921,11 +1926,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1adedb6cd648c1f47bd028f088bd62e0, type: 2}
-    - target: {fileID: 1764029021970743741, guid: ae15af6fceb7e954baad1b5a123a52b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 2141246359663019495, guid: ae15af6fceb7e954baad1b5a123a52b3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2973,7 +2973,7 @@ Transform:
   m_Children:
   - {fileID: 1777010481}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159838965 stripped
 GameObject:
