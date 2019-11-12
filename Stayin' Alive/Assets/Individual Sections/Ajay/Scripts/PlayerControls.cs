@@ -51,21 +51,21 @@ public class PlayerControls : MonoBehaviour
 
     void OnEnable()
     {
-        VCamManager.onPlayerStop += OnPlayerStoppedEventReceived;
+        AlleywayCamManager.onPlayerStop += OnPlayerStoppedEventReceived;
         OfficeCamManager.onPlayerStop += OnPlayerStoppedEventReceived;
         playerInput.Player.Enable();
     }
 
     void OnDisable()
     {
-        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
+        AlleywayCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
         OfficeCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
         playerInput.Player.Disable();
     }
 
     void OnDestroy()
     {
-        VCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
+        AlleywayCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
         OfficeCamManager.onPlayerStop -= OnPlayerStoppedEventReceived;
     }
 
