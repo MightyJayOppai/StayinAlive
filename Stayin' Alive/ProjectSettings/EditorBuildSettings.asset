@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Individual Sections/Ajay/Scenes/GameScenes/AlleywayScene.unity
     guid: c136fd41988c45142b83304e96869add
+  - enabled: 1
+    path: Assets/Individual Sections/Ajay/Scenes/GameScenes/DocksScene.unity
+    guid: 05a8971e952c3b74abe926d5b5970288
   m_configObjects: {}

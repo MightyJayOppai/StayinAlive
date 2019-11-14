@@ -31,6 +31,10 @@ public class SceneSelect : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
+    public void MoveToDocks()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+    }
     public void QuitGame()
     {
         Application.Quit();

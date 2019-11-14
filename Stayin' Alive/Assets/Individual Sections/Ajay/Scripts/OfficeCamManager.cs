@@ -110,7 +110,7 @@ public class OfficeCamManager : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    /*void OnTriggerExit(Collider other)
     {
         // if (other.tag == "AreaA1")
         // {
@@ -183,6 +183,6 @@ public class OfficeCamManager : MonoBehaviour
             if (onPlayerStop != null)
                 onPlayerStop();
         }
-    }
+    }*/
 }
 
