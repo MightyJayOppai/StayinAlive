@@ -18,14 +18,24 @@ public class ClueObserver : MonoBehaviour
         IClueItem item = e.Item;
 
         //Do something with the item
-        //This case rotate it
+        //This case rotate it  
         hud.clueLogUI.SetActive(false);
         observationCam.SetActive(true);
         mainCam.SetActive(false);
-
+        
     }
     void Update()
     {
-        
+        CloseObserveCam();
+    }
+
+    public void CloseObserveCam()
+    {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            observationCam.SetActive(false);
+            mainCam.SetActive(true);
+            hud.clueLogUI.SetActive(true);
+        }
     }
 }
