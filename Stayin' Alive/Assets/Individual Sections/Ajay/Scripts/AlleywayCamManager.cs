@@ -80,7 +80,7 @@ public class AlleywayCamManager : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    /*void OnTriggerExit(Collider other)
     {
         // if (other.tag == "AreaA1")
         // {
@@ -105,5 +105,5 @@ public class AlleywayCamManager : MonoBehaviour
             if (onPlayerStop != null)
                 onPlayerStop();
         }
-    }
+    }*/
 }
