@@ -7,11 +7,8 @@ public class PlayerController : MonoBehaviour
     [Header("Player Movement Variables")]
     [SerializeField] private float playerSpeed = 0f;
     [Range(0f, 10.0f)] [SerializeField] private float rotationSpeed = 0f;
-    private float gravity = 0f;
-    public Rigidbody rb;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController charController;
-    [SerializeField] private float defaultGravity = 0f;
     private float moveHorizontal = 0f;
     private float moveVertical = 0f;
     
@@ -28,8 +25,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         charController = GetComponent<CharacterController>();
-        rb = GetComponent<Rigidbody>();
-        gravity = defaultGravity;
     }
 
     void Update()
@@ -37,8 +32,6 @@ public class PlayerController : MonoBehaviour
             moveVertical = Input.GetAxis("Horizontal");
             moveHorizontal = Input.GetAxis("Vertical");
 
-        if (charController.isGrounded)
-        {
             moveDirection = new Vector3(moveVertical, 0f, moveHorizontal);
             moveDirection = moveDirection.normalized;
 
@@ -54,11 +47,7 @@ public class PlayerController : MonoBehaviour
 
             playerVector = camForward * moveDirection.z + camRight * moveDirection.x;
             playerVector = playerVector.normalized;
-        }
-        else
-        {
-            playerVector.y -= gravity * Time.deltaTime;
-        }
+        
 
         if (playerVector != Vector3.zero)
         {

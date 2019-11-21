@@ -7,9 +7,12 @@ public class PlayerControls : MonoBehaviour
 {
     private float horizontalAxis;
     private float verticalAxis;
+    [Range(0f, 10.0f)] [SerializeField] private float rotationSpeed = 0f;
     public float playerSpeed;
     private CharacterController charController;
     public Camera camera;
+    private Vector3 moveDirection = Vector3.zero;
+    
     void Start()
     {
         camera = GetComponent<Camera>();
@@ -20,6 +23,10 @@ public class PlayerControls : MonoBehaviour
         // reading the input:
         horizontalAxis = Input.GetAxis("Horizontal");
         verticalAxis = Input.GetAxis("Vertical");
+
+        //moveDirection = new Vector3(verticalAxis, 0f, horizontalAxis);
+        //moveDirection = moveDirection.normalized;
+
         // assuming we only using the single camera:
         camera = Camera.main;
         // camera forward and right vectors:
@@ -34,6 +41,11 @@ public class PlayerControls : MonoBehaviour
         Vector3 desiredMoveDirection = ((forward * verticalAxis) + (right * horizontalAxis));
         // now we can apply the movement:
         transform.Translate((desiredMoveDirection * (playerSpeed * Time.deltaTime)));
+
+        if (desiredMoveDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(desiredMoveDirection), rotationSpeed * Time.deltaTime);
+        }
     }
 
 }

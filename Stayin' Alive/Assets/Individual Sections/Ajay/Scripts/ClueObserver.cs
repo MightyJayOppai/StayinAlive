@@ -7,6 +7,7 @@ public class ClueObserver : MonoBehaviour
     public ClueLog clueLog;
     public GameObject observationCam;
     public GameObject mainCam;
+    public float speed;
     public HUD hud;
     void Start()
     {
