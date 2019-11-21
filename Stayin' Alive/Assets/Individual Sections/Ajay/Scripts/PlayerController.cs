@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerSpeed = 0f;
     [Range(0f, 10.0f)] [SerializeField] private float rotationSpeed = 0f;
     private float gravity = 0f;
+    public Rigidbody rb;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController charController;
     [SerializeField] private float defaultGravity = 0f;
@@ -15,7 +16,9 @@ public class PlayerController : MonoBehaviour
     private float moveVertical = 0f;
     
     [Header("Input Type")]
+    private InputPlayer playerInput;
     private Vector3 playerVector = Vector3.zero;
+
 
     [Header("Cam Variables")]
     [SerializeField] private Transform camPos;
@@ -25,13 +28,14 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         charController = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
         gravity = defaultGravity;
     }
 
     void Update()
     {
-        moveVertical = Input.GetAxis("Horizontal");
-        moveHorizontal = Input.GetAxis("Vertical");
+            moveVertical = Input.GetAxis("Horizontal");
+            moveHorizontal = Input.GetAxis("Vertical");
 
         if (charController.isGrounded)
         {
@@ -55,6 +59,13 @@ public class PlayerController : MonoBehaviour
         {
             playerVector.y -= gravity * Time.deltaTime;
         }
+
+        if (playerVector != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
+        }
+            charController.Move(playerVector * playerSpeed * Time.deltaTime);
+            Debug.Log(playerVector);
 
         if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {

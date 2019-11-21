@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.049821205, g: 0.046991818, b: 0.31132078, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e222162ddb8d34547a133b673221b195, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -34,11 +34,11 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionBounces: 2
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.082563445, g: 0.07575542, b: 0.05236792, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -194,7 +194,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 7.351525e-25, z: 5.82e-43, w: 6.1734006e-25}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -205,13 +205,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38444620}
-  m_LocalRotation: {x: -0.036774475, y: 0, z: 0, w: 0.9993236}
+  m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
   m_LocalPosition: {x: -75.7, y: 29.5, z: -186.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -4.215, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 0}
 --- !u!1 &80221566
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,8 +5972,8 @@ GameObject:
   - component: {fileID: 992003812}
   - component: {fileID: 992003821}
   - component: {fileID: 992003815}
-  - component: {fileID: 992003816}
   - component: {fileID: 992003818}
+  - component: {fileID: 992003816}
   - component: {fileID: 992003817}
   - component: {fileID: 992003811}
   m_Layer: 0
@@ -6089,17 +6089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536fc77b01ad2774a803a9ca967a6713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 5
-  runningSpeed: 8
-  rotationSpeed: 6
-  defaultGravity: 2
-  input: 0
-  camPos: {fileID: 1096148103}
-  isStopped: 0
-  currTime: 0
-  stoppingTime: 1
-  clueLog: {fileID: 1440859084}
-  Hud: {fileID: 2136909216}
+  playerSpeed: 5
+  camera: {fileID: 1096148102}
 --- !u!114 &992003817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6134,6 +6125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   rotationSpeed: 6
+  rb: {fileID: 0}
   defaultGravity: 2
   camPos: {fileID: 1096148103}
   clueLog: {fileID: 1440859084}
