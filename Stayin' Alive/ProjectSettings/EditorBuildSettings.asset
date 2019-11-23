@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Individual Sections/Ajay/Scenes/GameScenes/DocksScene.unity
     guid: 05a8971e952c3b74abe926d5b5970288
   - enabled: 1
-    path: Assets/Individual Sections/Ajay/Scenes/GameScenes/Park.unity
+    path: Assets/Individual Sections/Ajay/Scenes/GameScenes/ParkScene.unity
     guid: dd03ce10082ee5a429962ad4a6eefda1
   m_configObjects: {}

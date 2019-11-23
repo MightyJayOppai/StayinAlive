@@ -2,14 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ClueLog : MonoBehaviour
 {
     private const int SLOTS = 4;
     private List<IClueItem> mItems = new List<IClueItem>();
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
-    public event EventHandler<ClueEventArgs> ItemsCollected;
+    public MapSceneManager mapScene;
     public void AddItem(IClueItem item)
     {
         if (mItems.Count < SLOTS)
@@ -36,13 +36,6 @@ public class ClueLog : MonoBehaviour
             ItemObserved(this, new ClueEventArgs(item));
         }
     }
-    public void AllItemsCollected(IClueItem item)
-    {
-        if (mItems.Count == SLOTS)
-        {
-            ItemsCollected(this, new ClueEventArgs(item));
-        }
-    }
     void Start()
     {
         
@@ -50,6 +43,9 @@ public class ClueLog : MonoBehaviour
 
     void Update()
     {
-        
+        if (mItems.Count == SLOTS)
+        {
+            mapScene.MoveToOffice();
+        }
     }
 }

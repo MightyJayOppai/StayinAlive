@@ -9209,7 +9209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec21aaee33b067b4abe651b01f42d59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapSceneManager: {fileID: 575775321}
+  mapScene: {fileID: 575775321}
 --- !u!4 &1440859085
 Transform:
   m_ObjectHideFlags: 0

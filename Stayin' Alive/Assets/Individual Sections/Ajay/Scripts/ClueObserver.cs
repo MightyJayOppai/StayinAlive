@@ -9,11 +9,9 @@ public class ClueObserver : MonoBehaviour
     public GameObject mainCam;
     public float speed;
     public HUD hud;
-    public MapSceneManager mapScene;
     void Start()
     {
         clueLog.ItemObserved += ClueLog_ItemObserved;
-        clueLog.ItemsCollected += ClueLog_ItemsCollected;
     }
     public void ClueLog_ItemObserved(object sender, ClueEventArgs e)
     {
@@ -27,11 +25,6 @@ public class ClueObserver : MonoBehaviour
         mainCam.SetActive(false);
         Time.timeScale = 0f;
         
-    }
-    public void ClueLog_ItemsCollected(object sender, ClueEventArgs e)
-    {
-        IClueItem item = e.Item;
-        mapScene.MoveToOffice();
     }
     void Update()
     {
