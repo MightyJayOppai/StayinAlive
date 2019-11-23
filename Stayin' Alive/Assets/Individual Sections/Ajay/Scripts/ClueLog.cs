@@ -9,6 +9,7 @@ public class ClueLog : MonoBehaviour
     private List<IClueItem> mItems = new List<IClueItem>();
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
+    public event EventHandler<ClueEventArgs> ItemsCollected;
     public void AddItem(IClueItem item)
     {
         if (mItems.Count < SLOTS)
@@ -33,6 +34,13 @@ public class ClueLog : MonoBehaviour
         if (ItemObserved != null)
         {
             ItemObserved(this, new ClueEventArgs(item));
+        }
+    }
+    public void AllItemsCollected(IClueItem item)
+    {
+        if (mItems.Count == SLOTS)
+        {
+            ItemsCollected(this, new ClueEventArgs(item));
         }
     }
     void Start()

@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     private IClueItem mItemToPickup = null;
+    
     private void OnTriggerEnter(Collider other) 
     {
         IClueItem item = other.GetComponent<IClueItem>();
