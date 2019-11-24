@@ -5,7 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Player Movement Variables")]
-    [SerializeField] private float playerSpeed = 0f;
+    [SerializeField] private float playerSpeed;
+    [SerializeField] private float gravity;
+    public Transform groundCheck;
+    Vector3 velocity;
+    bool isGrounded;
+    [SerializeField] private float groundDistance;
+    public LayerMask groundMask;
     [Range(0f, 10.0f)] [SerializeField] private float rotationSpeed = 0f;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController charController;
@@ -20,15 +26,23 @@ public class PlayerController : MonoBehaviour
     [Header("Cam Variables")]
     [SerializeField] private Transform camPos;
 
+    Rigidbody rigidBody;
     public ClueLog clueLog;
     public HUD Hud;
     void Start()
     {
         charController = GetComponent<CharacterController>();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
+            isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+            if(isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f;
+            }
             moveVertical = Input.GetAxis("Horizontal");
             moveHorizontal = Input.GetAxis("Vertical");
 
@@ -47,7 +61,9 @@ public class PlayerController : MonoBehaviour
 
             playerVector = camForward * moveDirection.z + camRight * moveDirection.x;
             playerVector = playerVector.normalized;
-        
+
+            velocity.y += gravity * Time.deltaTime;
+            charController.Move(velocity * Time.deltaTime);
 
         if (playerVector != Vector3.zero)
         {
