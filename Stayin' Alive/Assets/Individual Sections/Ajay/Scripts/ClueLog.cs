@@ -10,6 +10,7 @@ public class ClueLog : MonoBehaviour
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
     public MapSceneManager mapScene;
+
     public void AddItem(IClueItem item)
     {
         if (mItems.Count < SLOTS)
@@ -47,5 +48,6 @@ public class ClueLog : MonoBehaviour
         {
             mapScene.MoveToOffice();
         }
+
     }
 }
