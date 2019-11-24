@@ -24,7 +24,6 @@ public class ClueObserver : MonoBehaviour
         observationCam.SetActive(true);
         mainCam.SetActive(false);
         Time.timeScale = 0f;
-        
     }
     void Update()
     {
