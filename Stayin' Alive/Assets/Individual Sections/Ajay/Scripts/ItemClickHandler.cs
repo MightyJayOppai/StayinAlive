@@ -16,4 +16,8 @@ public class ItemClickHandler : MonoBehaviour
         _ClueLog.ObserveItem(item);
         item.OnUse();
     }
+    void Update()
+    {
+        
+    }
 }
