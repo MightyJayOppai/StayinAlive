@@ -38,6 +38,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+<<<<<<< HEAD
+
+            if(isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f;
+            }
+            moveVertical = Input.GetAxis("Horizontal");
+            moveHorizontal = Input.GetAxis("Vertical");
+
+            moveDirection = new Vector3(moveVertical, 0f, moveHorizontal);
+=======
 
             if(isGrounded && velocity.y < 0)
             {
@@ -47,6 +58,7 @@ public class PlayerController : MonoBehaviour
             moveHorizontal = Input.GetAxis("Horizontal");
 
             moveDirection = new Vector3(moveHorizontal, 0f, moveVertical);
+>>>>>>> fe8a0e290f3316054f3efdb3da0fa45a9767b726
             moveDirection = moveDirection.normalized;
 
             // if (moveDirection != Vector3.zero)

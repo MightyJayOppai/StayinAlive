@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Stayin' Alive/Assets/Individual Sections/Ajay/Scripts/MainCamera.cs.meta
+guid: fc22a49ad499c254197c5ad5e82d6b09
+=======
 guid: c7f109f74ea9bc944b518aef2c4b04c8
+>>>>>>> fe8a0e290f3316054f3efdb3da0fa45a9767b726:Stayin' Alive/Assets/Individual Sections/Ajay/Scripts/ClueRotation.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

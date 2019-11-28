@@ -1403,7 +1403,11 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
+<<<<<<< HEAD
     value: 1
+=======
+    value: 0
+>>>>>>> fe8a0e290f3316054f3efdb3da0fa45a9767b726
   focusDistance:
     overrideState: 0
     value: 10
