@@ -43,6 +43,15 @@ public class PlayerController : MonoBehaviour
             {
                 velocity.y = -2f;
             }
+            moveVertical = Input.GetAxis("Horizontal");
+            moveHorizontal = Input.GetAxis("Vertical");
+
+            moveDirection = new Vector3(moveVertical, 0f, moveHorizontal);
+
+            if(isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f;
+            }
             moveVertical = Input.GetAxis("Vertical");
             moveHorizontal = Input.GetAxis("Horizontal");
 
