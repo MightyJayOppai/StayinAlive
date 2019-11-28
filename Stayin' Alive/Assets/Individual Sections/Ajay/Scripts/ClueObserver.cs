@@ -7,6 +7,7 @@ public class ClueObserver : MonoBehaviour
     public ClueLog clueLog;
     public GameObject observationCam;
     public GameObject mainCam;
+    public float speed;
     public HUD hud;
     void Start()
     {
@@ -22,7 +23,7 @@ public class ClueObserver : MonoBehaviour
         hud.clueLogUI.SetActive(false);
         observationCam.SetActive(true);
         mainCam.SetActive(false);
-        
+        Time.timeScale = 0f;
     }
     void Update()
     {
@@ -33,6 +34,7 @@ public class ClueObserver : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Q))
         {
+            Time.timeScale = 1f;
             observationCam.SetActive(false);
             mainCam.SetActive(true);
             hud.clueLogUI.SetActive(true);

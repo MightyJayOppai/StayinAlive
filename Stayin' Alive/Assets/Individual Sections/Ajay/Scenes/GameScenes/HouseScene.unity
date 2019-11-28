@@ -741,17 +741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536fc77b01ad2774a803a9ca967a6713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 4
-  runningSpeed: 8
   rotationSpeed: 6
-  defaultGravity: 2
-  input: 0
-  camPos: {fileID: 769530288}
-  isStopped: 0
-  currTime: 0
-  stoppingTime: 1
-  clueLog: {fileID: 0}
-  Hud: {fileID: 0}
+  playerSpeed: 0
+  camera: {fileID: 0}
 --- !u!143 &357996311
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1563,8 +1555,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769530285}
-  m_LocalRotation: {x: 0, y: -0.22851723, z: 0, w: 0.9735399}
-  m_LocalPosition: {x: 6.7017536, y: 0.972, z: 0.9324341}
+  m_LocalRotation: {x: 0, y: -0.93495053, z: 0, w: 0.35477817}
+  m_LocalPosition: {x: 2.8100014, y: 0.605, z: 6.199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4593,7 +4585,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1130100954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6204,7 +6196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 19a69ae03ba4f904685ff489cb52c3ca, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f4d1601bf87dbf04ba1b6b1efbe2894f, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -6239,7 +6231,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2085110621
 MonoBehaviour:
   m_ObjectHideFlags: 0

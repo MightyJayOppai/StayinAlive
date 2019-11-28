@@ -4,18 +4,43 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MapSceneManager : MonoBehaviour
 {
-    
-    void Start()
+void Start()
     {
         
     }
-
     void Update()
     {
         
     }
-    public void TransitionToAlleyway()
+    public void MoveToAlleyway()
     {
-        //UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+    }
+    public void MoveToHouse()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+    }
+    public void LoadMenu()
+    {
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        //Debug.Log("Loading Menu");
+    }
+    public void MoveToOffice()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+    }
+    public void MoveToDocks()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+    }
+    public void MoveToPark()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+        //Debug.Log("Im'ma Head out");
     }
 }
