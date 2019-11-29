@@ -6,19 +6,11 @@ public class MainCamera : MonoBehaviour
 {
     void Start()
     {
-        
+        CamManager.mainCam.SwitchCamera();
     }
 
     void Update()
     {
         
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            
-        }
     }
 }

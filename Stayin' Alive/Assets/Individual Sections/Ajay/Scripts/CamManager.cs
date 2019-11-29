@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class CamManager : MonoBehaviour
 {
-    private static CamManager instance = null;
-    public GameObject mainCam;
+    private static CamManager _instance;
+    public static  CamManager mainCam {get {return _instance;} }
+
     private void Awake()
     {
-        if (instance == null)
+        if(_instance != null && _instance != this)
         {
-            instance = this;
+            _instance = new CamManager();
         }
-        else if (instance != this)
+        else
         {
-            Destroy(gameObject);
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
+    public void SwitchCamera()
+    {
+        
+    }
+
     void Start()
     {
         
