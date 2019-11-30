@@ -23,7 +23,8 @@ public class AlleywayCamManager : MonoBehaviour
         if (other.tag == "AreaA1")
         {
             vCamA1.SetActive(true);
-            vCamB1.SetActive(true);
+            vCamB1.SetActive(false);
+            vCamC1.SetActive(false);
             Debug.Log("Cam Switched to VCamA1");
         }
 
@@ -41,7 +42,8 @@ public class AlleywayCamManager : MonoBehaviour
             vCamB2.SetActive(true);
             vCamB1.SetActive(false);
             vCamC1.SetActive(false);
-            Debug.Log("Cam Switched to VCamB3");
+            vCamA1.SetActive(false);
+            Debug.Log("Cam Switched to VCamB2");
         }
 
         if (other.tag == "AreaC1")
@@ -50,7 +52,7 @@ public class AlleywayCamManager : MonoBehaviour
             vCamC2Pan.SetActive(false);
             vCamC3.SetActive(false);
             vCamA1.SetActive(false);
-            vCamB2.SetActive(false);
+            vCamB1.SetActive(false);
             Debug.Log("Cam Switched to VCamC1");
         }
 

@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
         }
             charController.Move(playerVector * playerSpeed * Time.deltaTime);
-            Debug.Log(playerVector);
+            //Debug.Log(playerVector);
 
         if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
