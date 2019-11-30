@@ -10,7 +10,10 @@ public class AlleywayCamManager : MonoBehaviour
     [SerializeField] private GameObject vCamC1;
     [SerializeField] private GameObject vCamC2Pan;
     [SerializeField] private GameObject vCamC3;
+    [SerializeField] private GameObject vCamD1;
+    [SerializeField] private GameObject vCamD2;
     [SerializeField] private GameObject vCamD3;
+    [SerializeField] private GameObject vCamD4;
 
     public delegate void SendEvents();
     public static event SendEvents onPlayerStop;
@@ -29,6 +32,7 @@ public class AlleywayCamManager : MonoBehaviour
             vCamB1.SetActive(true);
             vCamA1.SetActive(false);
             vCamB2.SetActive(false);
+            vCamC1.SetActive(false);
             Debug.Log("Cam Switched to VCamB1");
         }
 
@@ -36,6 +40,7 @@ public class AlleywayCamManager : MonoBehaviour
         {
             vCamB2.SetActive(true);
             vCamB1.SetActive(false);
+            vCamC1.SetActive(false);
             Debug.Log("Cam Switched to VCamB3");
         }
 
@@ -44,6 +49,8 @@ public class AlleywayCamManager : MonoBehaviour
             vCamC1.SetActive(true);
             vCamC2Pan.SetActive(false);
             vCamC3.SetActive(false);
+            vCamA1.SetActive(false);
+            vCamB2.SetActive(false);
             Debug.Log("Cam Switched to VCamC1");
         }
 
@@ -59,15 +66,41 @@ public class AlleywayCamManager : MonoBehaviour
         {
             vCamC3.SetActive(true);
             vCamC2Pan.SetActive(false);
-            vCamD3.SetActive(false);
+            vCamD1.SetActive(false);
             Debug.Log("Cam Switched to VCamC3");
         }
 
+        if (other.tag == "AreaD1")
+        {
+            vCamD1.SetActive(true);
+            vCamC2Pan.SetActive(false);
+            vCamC3.SetActive(false);
+            Debug.Log("Cam Switched to VCamD1");
+        }
+        if (other.tag == "AreaD2")
+        {
+            vCamD2.SetActive(true);
+            vCamD1.SetActive(false);
+            vCamD3.SetActive(false);
+            vCamD4.SetActive(false);
+            vCamC2Pan.SetActive(false);
+            Debug.Log("Cam Switched to VCamD2");
+        }
         if (other.tag == "AreaD3")
         {
             vCamD3.SetActive(true);
-            vCamC2Pan.SetActive(false);
+            vCamD1.SetActive(false);
+            vCamD2.SetActive(false);
+            vCamD4.SetActive(false);
             Debug.Log("Cam Switched to VCamD3");
+        }
+        if (other.tag == "AreaD4")
+        {
+            vCamD4.SetActive(true);
+            vCamD1.SetActive(false);
+            vCamD2.SetActive(false);
+            vCamD3.SetActive(false);
+            Debug.Log("Cam Switched to VCamD4");
         }
     }
 
