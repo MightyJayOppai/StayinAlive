@@ -27,6 +27,7 @@ TagManager:
   - Clue3
   - Clue4
   - AreaD4
+  - KeyItem
   layers:
   - Default
   - TransparentFX
