@@ -30,6 +30,7 @@ TagManager:
   - KeyItem
   - AreaA3
   - AreaC4
+  - AreaD5
   layers:
   - Default
   - TransparentFX

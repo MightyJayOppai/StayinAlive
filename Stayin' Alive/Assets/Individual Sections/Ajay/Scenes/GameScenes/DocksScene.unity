@@ -163,7 +163,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -197,7 +197,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -561,7 +561,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1054,7 +1054,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1285,7 +1285,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -1319,7 +1319,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1610,7 +1610,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -1644,7 +1644,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1701,7 +1701,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -1735,7 +1735,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1812,7 +1812,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1926,7 +1926,7 @@ GameObject:
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &236343163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,7 +2209,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2385,7 +2385,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2576,7 +2576,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -2610,7 +2610,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2900,7 +2900,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3092,7 +3092,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -3126,7 +3126,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3252,7 +3252,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -3286,7 +3286,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3363,7 +3363,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4069,7 +4069,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4821,7 +4821,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4912,7 +4912,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5346,7 +5346,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -5380,7 +5380,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5612,7 +5612,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5703,7 +5703,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5794,7 +5794,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5885,7 +5885,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5956,7 +5956,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -5990,7 +5990,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6304,7 +6304,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -6338,7 +6338,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6761,7 +6761,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6929,7 +6929,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7064,7 +7064,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -7098,7 +7098,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7892,7 +7892,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -7926,7 +7926,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7983,7 +7983,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -8017,7 +8017,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8094,7 +8094,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8303,7 +8303,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -8337,7 +8337,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8414,7 +8414,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8485,7 +8485,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -8519,7 +8519,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8828,7 +8828,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -8862,7 +8862,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -9155,7 +9155,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -9226,7 +9226,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -9260,7 +9260,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -9414,7 +9414,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -9522,7 +9522,7 @@ GameObject:
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1547468471
 Transform:
   m_ObjectHideFlags: 0
@@ -9738,7 +9738,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -9772,7 +9772,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -10073,7 +10073,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -10368,7 +10368,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -10914,7 +10914,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -11005,7 +11005,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -11468,7 +11468,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -11502,7 +11502,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -11579,7 +11579,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -11740,7 +11740,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -11774,7 +11774,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -12062,7 +12062,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -12153,7 +12153,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -12282,7 +12282,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -12316,7 +12316,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -12414,7 +12414,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -12448,7 +12448,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -12649,7 +12649,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -12683,7 +12683,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21027,7 +21027,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 60
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -21052,8 +21052,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077450555}
-  m_LocalRotation: {x: 0.01812665, y: -0.9716523, z: 0.07935092, w: 0.22196092}
-  m_LocalPosition: {x: -50.89644, y: 27.461277, z: -435.55576}
+  m_LocalRotation: {x: 0, y: 0.9547608, z: -0, w: -0.29737487}
+  m_LocalPosition: {x: -41.35044, y: 27.532276, z: -316.27075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21261,7 +21261,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21332,7 +21332,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -21366,7 +21366,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21423,7 +21423,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -21457,7 +21457,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21514,7 +21514,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -21548,7 +21548,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21684,7 +21684,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -21718,7 +21718,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -21852,7 +21852,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0.98014337, g: 1, b: 0.6981132, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 3.08
   m_SpotAngle: 95.4
   m_InnerSpotAngle: 1
@@ -21886,7 +21886,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
