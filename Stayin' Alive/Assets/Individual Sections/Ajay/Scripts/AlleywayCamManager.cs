@@ -10,6 +10,7 @@ public class AlleywayCamManager : MonoBehaviour
     [SerializeField] private GameObject vCamC1;
     [SerializeField] private GameObject vCamC2Pan;
     [SerializeField] private GameObject vCamC3;
+    [SerializeField] private GameObject vCamC4;
     [SerializeField] private GameObject vCamD1;
     [SerializeField] private GameObject vCamD2;
     [SerializeField] private GameObject vCamD3;
@@ -53,6 +54,7 @@ public class AlleywayCamManager : MonoBehaviour
             vCamC3.SetActive(false);
             vCamA1.SetActive(false);
             vCamB1.SetActive(false);
+            vCamC4.SetActive(false);
             Debug.Log("Cam Switched to VCamC1");
         }
 
@@ -61,6 +63,7 @@ public class AlleywayCamManager : MonoBehaviour
             vCamC2Pan.SetActive(true);
             vCamC1.SetActive(false);
             vCamC3.SetActive(false);
+            vCamC4.SetActive(false);
             Debug.Log("Cam Switched to VCamC2");
         }
 
@@ -69,7 +72,17 @@ public class AlleywayCamManager : MonoBehaviour
             vCamC3.SetActive(true);
             vCamC2Pan.SetActive(false);
             vCamD1.SetActive(false);
+            vCamC4.SetActive(false);
             Debug.Log("Cam Switched to VCamC3");
+        }
+
+        if (other.tag == "AreaC4")
+        {
+            vCamC4.SetActive(true);
+            vCamC2Pan.SetActive(false);
+            vCamC3.SetActive(false);
+            vCamC1.SetActive(false);
+            Debug.Log("Cam Switched to VCamC4");
         }
 
         if (other.tag == "AreaD1")

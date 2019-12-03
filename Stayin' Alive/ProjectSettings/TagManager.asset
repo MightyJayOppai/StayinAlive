@@ -29,6 +29,7 @@ TagManager:
   - AreaD4
   - KeyItem
   - AreaA3
+  - AreaC4
   layers:
   - Default
   - TransparentFX
