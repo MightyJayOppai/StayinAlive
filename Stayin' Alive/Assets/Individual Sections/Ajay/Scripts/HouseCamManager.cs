@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HouseCamManager : MonoBehaviour
 {
-    [SerializeField] private GameObject hCamA1Pan;
+    [SerializeField] private GameObject hCamA1;
     [SerializeField] private GameObject hCamA2;
     [SerializeField] private GameObject hCamB1;
     [SerializeField] private GameObject hCamB2;
@@ -17,9 +17,9 @@ public class HouseCamManager : MonoBehaviour
     public static event SendEvents onPlayerStop;
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "AreaA1Pan")
+        if (other.tag == "AreaA1")
         {
-            hCamA1Pan.SetActive(true);
+            hCamA1.SetActive(true);
             hCamA2.SetActive(false);
             hCamB1.SetActive(false);
             hCamB2.SetActive(false);
@@ -29,7 +29,7 @@ public class HouseCamManager : MonoBehaviour
         if (other.tag == "AreaA2")
         {
             hCamA2.SetActive(true);
-            hCamA1Pan.SetActive(false);
+            hCamA1.SetActive(false);
             hCamB1.SetActive(false);
             hCamB2.SetActive(false);
             Debug.Log("Cam Switched to hCamA2");
@@ -40,7 +40,7 @@ public class HouseCamManager : MonoBehaviour
             hCamB1.SetActive(true);
             hCamB2.SetActive(false);
             hCamA2.SetActive(false);
-            hCamA1Pan.SetActive(false);
+            hCamA1.SetActive(false);
             Debug.Log("Cam Switched to hCamB1");
         }
 
@@ -49,7 +49,7 @@ public class HouseCamManager : MonoBehaviour
             hCamB2.SetActive(true);
             hCamB1.SetActive(false);
             hCamA2.SetActive(false);
-            hCamA1Pan.SetActive(false);
+            hCamA1.SetActive(false);
             Debug.Log("Cam Switched to hCamB2");
         }
 
@@ -87,81 +87,6 @@ public class HouseCamManager : MonoBehaviour
             hCamD1.SetActive(true);
             hCamC3.SetActive(false);
             Debug.Log("Cam Switched to hCamD1");
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        // if (other.tag == "AreaA1")
-        // {
-        //     if (onPlayerStop != null)
-        //         onPlayerStop();
-        // }
-
-        if (other.tag == "AreaA1")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaA2")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaB1")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaB2")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaB3")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaB4Pan")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaC1")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaC2")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaC3")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaD1")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
-        }
-
-        if (other.tag == "AreaD2")
-        {
-            if (onPlayerStop != null)
-                onPlayerStop();
         }
     }
 }
