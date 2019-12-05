@@ -7,11 +7,22 @@ public class DocksCamManager : MonoBehaviour
     [SerializeField] private GameObject DCamA1;
     [SerializeField] private GameObject DCamA2;
     [SerializeField] private GameObject DCamA3;
+    [SerializeField] private GameObject DCamB1;
+    [SerializeField] private GameObject DCamB2;
+    [SerializeField] private GameObject DCamB3;
     [SerializeField] private GameObject DCamC1;
     [SerializeField] private GameObject DCamC2;
     [SerializeField] private GameObject DCamD1;
     [SerializeField] private GameObject DCamD2;
     [SerializeField] private GameObject DCamD3;
+    [SerializeField] private GameObject DCamE1;
+    [SerializeField] private GameObject DCamE2;
+    [SerializeField] private GameObject DCamF1;
+    [SerializeField] private GameObject DCamF2;
+    [SerializeField] private GameObject DCamF3;
+    [SerializeField] private GameObject DCamF4;
+    [SerializeField] private GameObject DCamF5;
+    [SerializeField] private GameObject DCamF6;
 
     
     void OnTriggerEnter(Collider other)
@@ -40,6 +51,30 @@ public class DocksCamManager : MonoBehaviour
             Debug.Log("Cam Switched to DCamA3");
         }
 
+        if (other.tag == "AreaB1")
+        {
+            DCamB1.SetActive(true);
+            DCamC2.SetActive(false);
+            DCamB2.SetActive(false);
+            Debug.Log("Cam Switched to DCamB1");
+        }
+
+        if (other.tag == "AreaB2")
+        {
+            DCamB2.SetActive(true);
+            DCamB1.SetActive(false);
+            DCamB3.SetActive(false);
+            DCamE1.SetActive(false);
+            Debug.Log("Cam Switched to DCamB2");
+        }
+
+        if (other.tag == "AreaB3")
+        {
+            DCamB3.SetActive(true);
+            DCamB2.SetActive(false);
+            Debug.Log("Cam Switched to DCamB3");
+        }
+
         if (other.tag == "AreaC1")
         {
             DCamC1.SetActive(true);
@@ -62,6 +97,7 @@ public class DocksCamManager : MonoBehaviour
             DCamC1.SetActive(false);
             Debug.Log("Cam Switched to DCamD1");
         }
+
         if (other.tag == "AreaD2")
         {
             DCamD2.SetActive(true);
@@ -69,12 +105,80 @@ public class DocksCamManager : MonoBehaviour
             DCamC1.SetActive(false);
             Debug.Log("Cam Switched to DCamD2");
         }
+
         if (other.tag == "AreaD3")
         {
             DCamD3.SetActive(true);
             DCamD2.SetActive(false);
             DCamD1.SetActive(false);
             Debug.Log("Cam Switched to DCamD3");
+        }
+
+        if (other.tag == "AreaE1")
+        {
+            DCamE1.SetActive(true);
+            DCamE2.SetActive(false);
+            DCamB2.SetActive(false);
+            Debug.Log("Cam Switched to DCamE1");
+        }
+
+        if (other.tag == "AreaE2")
+        {
+            DCamE2.SetActive(true);
+            DCamE1.SetActive(false);
+            DCamA1.SetActive(false);
+            Debug.Log("Cam Switched to DCamE2");
+        }
+
+        if (other.tag == "AreaF1")
+        {
+            DCamF1.SetActive(true);
+            DCamA1.SetActive(false);
+            DCamA2.SetActive(false);
+            DCamF4.SetActive(false);
+            DCamF2.SetActive(false);
+            Debug.Log("Cam Switched to DCamF1");
+        }
+
+        if (other.tag == "AreaF2")
+        {
+            DCamF2.SetActive(true);
+            DCamF1.SetActive(false);
+            DCamF3.SetActive(false);
+            Debug.Log("Cam Switched to DCamF2");
+        }
+
+        if (other.tag == "AreaF3")
+        {
+            DCamF3.SetActive(true);
+            DCamF1.SetActive(false);
+            DCamF2.SetActive(false);
+            Debug.Log("Cam Switched to DCamF3");
+        }
+
+        if (other.tag == "AreaF4")
+        {
+            DCamF4.SetActive(true);
+            DCamB3.SetActive(false);
+            DCamF1.SetActive(false);
+            DCamF5.SetActive(false);
+            Debug.Log("Cam Switched to DCamF4");
+        }
+
+        if (other.tag == "AreaF5")
+        {
+            DCamF5.SetActive(true);
+            DCamF4.SetActive(false);
+            DCamF6.SetActive(false);
+            Debug.Log("Cam Switched to DCamF5");
+        }
+
+        if (other.tag == "AreaF6")
+        {
+            DCamF6.SetActive(true);
+            DCamF4.SetActive(false);
+            DCamF5.SetActive(false);
+            Debug.Log("Cam Switched to DCamF6");
         }
     }
 }
