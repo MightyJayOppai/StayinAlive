@@ -8,19 +8,19 @@ public class CaseFileTransition : MonoBehaviour
     public GameObject transitionTextBG;
     public GameObject transitionText;
     public GameObject sceneTransitionScreen;
-    public Collider col;    
+    [SerializeField] private Collider playerCol;
+    
     void Start()
     {
         transitionTextBG.SetActive(false);
         transitionText.SetActive(false);
         sceneTransitionScreen.SetActive(false);
-
     }
 
     
     void Update()
     {
-        if(col!= null && Input.GetKeyDown(KeyCode.E))
+        if(playerCol != null && Input.GetKeyDown(KeyCode.E))
         {
             if (transitionTextBG.activeSelf)
             {
@@ -36,7 +36,7 @@ public class CaseFileTransition : MonoBehaviour
         //To display the Screen once the player enters the collider
         if (other.tag == "Player")
         {
-            col = other;
+            playerCol = other;
             transitionTextBG.SetActive(true);
             transitionText.SetActive(true);
         }
@@ -47,7 +47,7 @@ public class CaseFileTransition : MonoBehaviour
         //To remove the Screen once the player moves away from the collider
         if (other.tag == "Player")
         {
-            col = null;
+            playerCol = null;
             transitionTextBG.SetActive(false);
             transitionText.SetActive(false);
             sceneTransitionScreen.SetActive(false);

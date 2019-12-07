@@ -10,6 +10,7 @@ public class ClueLog : MonoBehaviour
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
     public MapSceneManager mapScene;
+    public AccusationFolders accusation;
 
     public void AddItem(IClueItem item)
     {
@@ -44,10 +45,22 @@ public class ClueLog : MonoBehaviour
 
     void Update()
     {
-        if (mItems.Count == SLOTS)
+        if (mItems.Count == SLOTS && Application.loadedLevelName == "AlleywayScene")
         {
             mapScene.MoveToOffice();
+            accusation.CaseFromAlleyway();
         }
 
+        if (mItems.Count == SLOTS && Application.loadedLevelName == "ParkScene")
+        {
+            mapScene.MoveToOffice();
+            accusation.CaseFromPark();
+        }
+
+        if (mItems.Count == SLOTS && Application.loadedLevelName == "DocksScene")
+        {
+            mapScene.MoveToOffice();
+            accusation.CaseFromDocks();
+        }
     }
 }
