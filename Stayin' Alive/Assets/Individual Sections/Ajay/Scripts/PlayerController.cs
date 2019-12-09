@@ -64,12 +64,14 @@ public class PlayerController : MonoBehaviour
 
             velocity.y += gravity * Time.deltaTime;
             charController.Move(velocity * Time.deltaTime);
+            //transform.position = transform.position + velocity * Time.deltaTime;
 
         if (playerVector != Vector3.zero)
         {
             transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
         }
-            charController.Move(playerVector * playerSpeed * Time.deltaTime);
+           charController.Move(playerVector * playerSpeed * Time.deltaTime);
+           //transform.position = transform.position + playerVector * playerSpeed * Time.deltaTime;
             //Debug.Log(playerVector);
 
         if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
