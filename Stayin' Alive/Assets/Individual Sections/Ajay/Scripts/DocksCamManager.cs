@@ -33,7 +33,6 @@ public class DocksCamManager : MonoBehaviour
     [SerializeField] private GameObject DCamG8;
     [SerializeField] private GameObject DCamG9;
     [SerializeField] private GameObject DCamG10;
-    [SerializeField] private GameObject DCamG11;
     [SerializeField] private GameObject DCamH1;
     [SerializeField] private GameObject DCamH2;
     [SerializeField] private GameObject DCamH3;
@@ -184,6 +183,7 @@ public class DocksCamManager : MonoBehaviour
             DCamB3.SetActive(false);
             DCamF1.SetActive(false);
             DCamF5.SetActive(false);
+            DCamA1.SetActive(false);
             Debug.Log("Cam Switched to DCamF4");
         }
 
@@ -285,12 +285,6 @@ public class DocksCamManager : MonoBehaviour
             Debug.Log("Cam Switched to DCamG10");
         }
 
-        if (other.tag == "AreaG11")
-        {
-            DCamG11.SetActive(true);
-            DCamG1.SetActive(false);
-            Debug.Log("Cam Switched to DCamG11");
-        }
 
         if (other.tag == "AreaH1")
         {
