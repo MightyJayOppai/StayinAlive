@@ -1411,6 +1411,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119169205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a82b08e829ea246bb87e2f0cf6727d, type: 3}
+  m_Script: {fileID: 11500000, guid: ddd01ece6d98e5c4e871fd16838438b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileAlleyway: {fileID: 0}
+  filePark: {fileID: 0}
+  fileDocks: {fileID: 0}
+  isAlleyway: 0
+  isPark: 0
+  isDocks: 0

@@ -23,7 +23,7 @@ public class ClueLog : MonoBehaviour
                 mItems.Add(item);
                 item.OnPickUp();
 
-                if(ItemAdded != null)
+                if (ItemAdded != null)
                 {
                     ItemAdded(this, new ClueEventArgs(item));
                 }
@@ -48,19 +48,22 @@ public class ClueLog : MonoBehaviour
         if (mItems.Count == SLOTS && Application.loadedLevelName == "AlleywayScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromAlleyway();
+            mapScene.CaseFromAlleyway();
+            DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "ParkScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromPark();
+            mapScene.CaseFromPark();
+            DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "DocksScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromDocks();
+            mapScene.CaseFromDocks();
+            DontDestroyOnLoad(mapScene);
         }
     }
 }
