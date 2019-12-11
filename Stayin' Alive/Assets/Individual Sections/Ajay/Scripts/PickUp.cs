@@ -22,6 +22,7 @@ public class PickUp : MonoBehaviour
 
         if (other.tag == "Clue1")
         {
+            Destroy(other.gameObject);
             i = Instantiate(clueIcons[0]);
             i.transform.SetParent (clueLogPanel.transform);
         }

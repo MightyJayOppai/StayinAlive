@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class ClueLog : MonoBehaviour
 {
     private const int SLOTS = 4;
@@ -10,7 +11,7 @@ public class ClueLog : MonoBehaviour
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
     public MapSceneManager mapScene;
-    public AccusationFolders accusation;
+    private AccusationFolders accusation;
 
     public void AddItem(IClueItem item)
     {

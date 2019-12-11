@@ -4409,7 +4409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f22ef0dace24a4c93274746a7b0be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 5
+  playerSpeed: 2
   gravity: -9.81
   groundCheck: {fileID: 709793876}
   groundDistance: 0.1

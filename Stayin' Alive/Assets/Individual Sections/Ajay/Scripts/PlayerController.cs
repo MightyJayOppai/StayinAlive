@@ -66,12 +66,16 @@ public class PlayerController : MonoBehaviour
 
             velocity.y += gravity * Time.deltaTime;
             charController.Move(velocity * Time.deltaTime);
-            anim.SetBool("isFast", false);
             //transform.position = transform.position + velocity * Time.deltaTime;
 
         if (playerVector != Vector3.zero)
         {
             transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
         }
            charController.Move(playerVector * playerSpeed * Time.deltaTime);
            //transform.position = transform.position + playerVector * playerSpeed * Time.deltaTime;
