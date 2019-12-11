@@ -29,10 +29,12 @@ public class PlayerController : MonoBehaviour
     Rigidbody rigidBody;
     public ClueLog clueLog;
     public HUD Hud;
+    private Animator anim;
     void Start()
     {
         charController = GetComponent<CharacterController>();
         rigidBody = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
             velocity.y += gravity * Time.deltaTime;
             charController.Move(velocity * Time.deltaTime);
+            anim.SetBool("isFast", false);
             //transform.position = transform.position + velocity * Time.deltaTime;
 
         if (playerVector != Vector3.zero)

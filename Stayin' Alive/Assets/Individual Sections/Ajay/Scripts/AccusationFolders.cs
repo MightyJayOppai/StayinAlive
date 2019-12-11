@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class AccusationFolders : MonoBehaviour
 {
+    public GameObject fileAlleyway;
+    public GameObject filePark;
+    public GameObject fileDocks;
     public GameObject accFilesBG;
     public GameObject accFilesText;
     public GameObject accAlleywayScreen;
@@ -19,6 +22,25 @@ public class AccusationFolders : MonoBehaviour
 
     void Update()
     {
+        if (mapScene.isAlleyway = true)
+        {
+            fileAlleyway.SetActive(true);
+            filePark.SetActive(false);
+            fileDocks.SetActive(false);
+        }
+        else if (mapScene.isPark = true)
+        {
+            filePark.SetActive(true);
+            fileAlleyway.SetActive(false);
+            fileDocks.SetActive(false);
+        }
+        else if (mapScene.isDocks = true)
+        {
+            fileDocks.SetActive(true);
+            fileAlleyway.SetActive(false);
+            filePark.SetActive(false);
+        }
+
         if(playerCol != null && Input.GetKeyDown(KeyCode.E))
         {
             if (accFilesBG.activeSelf)

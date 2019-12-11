@@ -48,21 +48,27 @@ public class ClueLog : MonoBehaviour
         if (mItems.Count == SLOTS && Application.loadedLevelName == "AlleywayScene")
         {
             mapScene.MoveToOffice();
-            mapScene.CaseFromAlleyway();
+            mapScene.isAlleyway = true;
+            mapScene.isPark = false;
+            mapScene.isDocks = false;
             DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "ParkScene")
         {
             mapScene.MoveToOffice();
-            mapScene.CaseFromPark();
+            mapScene.isPark = true;
+            mapScene.isAlleyway = false;
+            mapScene.isDocks = false;
             DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "DocksScene")
         {
             mapScene.MoveToOffice();
-            mapScene.CaseFromDocks();
+            mapScene.isDocks = true;
+            mapScene.isAlleyway = false;
+            mapScene.isPark = false;
             DontDestroyOnLoad(mapScene);
         }
     }

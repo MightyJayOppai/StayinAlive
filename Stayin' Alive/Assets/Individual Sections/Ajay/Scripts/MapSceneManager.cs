@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MapSceneManager : MonoBehaviour
 {
-    public GameObject fileAlleyway;
-    public GameObject filePark;
-    public GameObject fileDocks;
     public bool isAlleyway;
     public bool isPark;
     public bool isDocks;
@@ -48,28 +45,5 @@ public class MapSceneManager : MonoBehaviour
     {
         Application.Quit();
         //Debug.Log("Im'ma Head out");
-    }
-
-    public void CaseFromAlleyway()
-    {
-        isAlleyway = true;
-        fileAlleyway.SetActive(true);
-        filePark.SetActive(false);
-        fileDocks.SetActive(false);
-    }
-
-    public void CaseFromPark()
-    {
-        isPark = true;
-        filePark.SetActive(true);
-        fileAlleyway.SetActive(false);
-        fileDocks.SetActive(false);
-    }
-    public void CaseFromDocks()
-    {
-        isDocks = true;
-        fileDocks.SetActive(true);
-        fileAlleyway.SetActive(false);
-        filePark.SetActive(false);
     }
 }

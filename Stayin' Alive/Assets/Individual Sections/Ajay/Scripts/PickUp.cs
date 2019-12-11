@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-
+        
     }
     void OnTriggerEnter(Collider other)
     {
