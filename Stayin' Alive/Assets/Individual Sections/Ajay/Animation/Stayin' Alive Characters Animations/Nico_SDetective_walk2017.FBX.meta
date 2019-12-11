@@ -38,7 +38,7 @@ ModelImporter:
       name: Walk
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 62
+      firstFrame: 60
       lastFrame: 99
       wrapMode: 0
       orientationOffsetY: 0
@@ -46,7 +46,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

@@ -29,10 +29,12 @@ public class PlayerController : MonoBehaviour
     Rigidbody rigidBody;
     public ClueLog clueLog;
     public HUD Hud;
+    private Animator anim;
     void Start()
     {
         charController = GetComponent<CharacterController>();
         rigidBody = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -69,6 +71,11 @@ public class PlayerController : MonoBehaviour
         if (playerVector != Vector3.zero)
         {
             transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(playerVector), rotationSpeed * Time.deltaTime);
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
         }
            charController.Move(playerVector * playerSpeed * Time.deltaTime);
            //transform.position = transform.position + playerVector * playerSpeed * Time.deltaTime;

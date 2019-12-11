@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class ClueLog : MonoBehaviour
 {
     private const int SLOTS = 4;
@@ -10,7 +11,7 @@ public class ClueLog : MonoBehaviour
     public event EventHandler<ClueEventArgs> ItemAdded;
     public event EventHandler<ClueEventArgs> ItemObserved;
     public MapSceneManager mapScene;
-    public AccusationFolders accusation;
+    private AccusationFolders accusation;
 
     public void AddItem(IClueItem item)
     {
@@ -23,7 +24,7 @@ public class ClueLog : MonoBehaviour
                 mItems.Add(item);
                 item.OnPickUp();
 
-                if(ItemAdded != null)
+                if (ItemAdded != null)
                 {
                     ItemAdded(this, new ClueEventArgs(item));
                 }
@@ -48,19 +49,28 @@ public class ClueLog : MonoBehaviour
         if (mItems.Count == SLOTS && Application.loadedLevelName == "AlleywayScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromAlleyway();
+            mapScene.isAlleyway = true;
+            mapScene.isPark = false;
+            mapScene.isDocks = false;
+            DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "ParkScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromPark();
+            mapScene.isPark = true;
+            mapScene.isAlleyway = false;
+            mapScene.isDocks = false;
+            DontDestroyOnLoad(mapScene);
         }
 
         if (mItems.Count == SLOTS && Application.loadedLevelName == "DocksScene")
         {
             mapScene.MoveToOffice();
-            accusation.CaseFromDocks();
+            mapScene.isDocks = true;
+            mapScene.isAlleyway = false;
+            mapScene.isPark = false;
+            DontDestroyOnLoad(mapScene);
         }
     }
 }

@@ -5,18 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class AccusationFolders : MonoBehaviour
 {
+    public GameObject fileAlleyway;
+    public GameObject filePark;
+    public GameObject fileDocks;
     public GameObject accFilesBG;
     public GameObject accFilesText;
     public GameObject accAlleywayScreen;
     public GameObject accParkScreen;
     public GameObject accDocksScreen;
-    public GameObject fileAlleyway;
-    public GameObject filePark;
-    public GameObject fileDocks;
-    public bool isAlleyway;
-    public bool isPark;
-    public bool isDocks;
     [SerializeField] private Collider playerCol;
+    public MapSceneManager mapScene;
     void Start()
     {
         
@@ -24,27 +22,46 @@ public class AccusationFolders : MonoBehaviour
 
     void Update()
     {
+        if (mapScene.isAlleyway = true)
+        {
+            fileAlleyway.SetActive(true);
+            filePark.SetActive(false);
+            fileDocks.SetActive(false);
+        }
+        else if (mapScene.isPark = true)
+        {
+            filePark.SetActive(true);
+            fileAlleyway.SetActive(false);
+            fileDocks.SetActive(false);
+        }
+        else if (mapScene.isDocks = true)
+        {
+            fileDocks.SetActive(true);
+            fileAlleyway.SetActive(false);
+            filePark.SetActive(false);
+        }
+
         if(playerCol != null && Input.GetKeyDown(KeyCode.E))
         {
             if (accFilesBG.activeSelf)
             {
                 accFilesBG.SetActive(!accFilesBG.activeSelf);
                 //Use bool as if
-                if (isAlleyway == true)
+                if (mapScene.isAlleyway)
                 {
                     accAlleywayScreen.SetActive(true);
                     accParkScreen.SetActive(false);
                     accDocksScreen.SetActive(false);
                 }
                 
-                if (isPark == true)
+                if (mapScene.isPark)
                 {
                     accParkScreen.SetActive(true);
                     accAlleywayScreen.SetActive(false);
                     accDocksScreen.SetActive(false);
                 }
 
-                if (isDocks == true)
+                if (mapScene.isDocks)
                 {
                     accDocksScreen.SetActive(true);
                     accParkScreen.SetActive(false);
@@ -65,28 +82,5 @@ public class AccusationFolders : MonoBehaviour
     void OnTriggerExit(Collider other) 
     {
         
-    }
-
-    public void CaseFromAlleyway()
-    {
-        isAlleyway = true;
-        fileAlleyway.SetActive(true);
-        filePark.SetActive(false);
-        fileDocks.SetActive(false);
-    }
-
-    public void CaseFromPark()
-    {
-        isPark = true;
-        filePark.SetActive(true);
-        fileAlleyway.SetActive(false);
-        fileDocks.SetActive(false);
-    }
-    public void CaseFromDocks()
-    {
-        isDocks = true;
-        fileDocks.SetActive(true);
-        fileAlleyway.SetActive(false);
-        filePark.SetActive(false);
     }
 }

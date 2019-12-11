@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MapSceneManager : MonoBehaviour
 {
-void Start()
+    public bool isAlleyway;
+    public bool isPark;
+    public bool isDocks;
+    void Start()
     {
         
     }
