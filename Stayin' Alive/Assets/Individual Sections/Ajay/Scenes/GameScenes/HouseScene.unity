@@ -2050,6 +2050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664319068}
   - component: {fileID: 664319069}
+  - component: {fileID: 664319070}
   m_Layer: 0
   m_Name: AreaB1
   m_TagString: AreaB1
@@ -2084,6 +2085,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9026217, y: 1, z: 5.209284}
   m_Center: {x: 0.43702435, y: 0, z: -3.2317429}
+--- !u!65 &664319070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664319067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8027663, y: 1, z: 1.770649}
+  m_Center: {x: -1.6764405, y: 0, z: 0.38532472}
 --- !u!1 &667975668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3821614798475551980, guid: 62b2d3c8ec754094c8d8c7731622a49c,
