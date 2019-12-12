@@ -1400,7 +1400,7 @@ MonoBehaviour:
     value: 18.5
   focalLength:
     overrideState: 1
-    value: 76
+    value: 37
   kernelSize:
     overrideState: 1
     value: 0
@@ -1477,7 +1477,7 @@ MonoBehaviour:
     value: 0.3
   size:
     overrideState: 1
-    value: 1.12
+    value: 0.76
   lumContrib:
     overrideState: 1
     value: 0.8
