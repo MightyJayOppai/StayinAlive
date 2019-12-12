@@ -51,6 +51,11 @@ TagManager:
   - AreaH1
   - AreaH2
   - AreaH3
+  - ObservationCam
+  - Clue1Scene
+  - Clue2Scene
+  - Clue3Scene
+  - Clue4Scene
   layers:
   - Default
   - TransparentFX
