@@ -5,14 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CaseFileTransition : MonoBehaviour
 {
-    public GameObject alleywayTransition;
-    public GameObject parkTransition;
-    public GameObject docksTransition;
     public GameObject transitionTextBG;
     public GameObject transitionText;
     public GameObject sceneTransitionScreen;
     [SerializeField] private Collider playerCol;
-    public MapSceneManager mapScene;
     
     void Start()
     {
@@ -24,24 +20,6 @@ public class CaseFileTransition : MonoBehaviour
     
     void Update()
     {
-        if (mapScene.isAlleyway = true)
-        {
-            alleywayTransition.SetActive(true);
-            parkTransition.SetActive(false);
-            docksTransition.SetActive(false);
-        }
-        else if (mapScene.isPark = true)
-        {
-            parkTransition.SetActive(true);
-            alleywayTransition.SetActive(false);
-            docksTransition.SetActive(false);
-        }
-        else if (mapScene.isDocks = true)
-        {
-            docksTransition.SetActive(true);
-            alleywayTransition.SetActive(false);
-            parkTransition.SetActive(false);
-        }
         if(playerCol != null && Input.GetKeyDown(KeyCode.E))
         {
             if (transitionTextBG.activeSelf)
