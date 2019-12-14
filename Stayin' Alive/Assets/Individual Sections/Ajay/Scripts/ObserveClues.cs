@@ -4,20 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ObserveClues : MonoBehaviour
 {
-    private GameObject observationCam;
+    private GameObject observationController;
     public  GameObject observedClue;
     void Start()
     {
-        observationCam = GameObject.FindWithTag("ObservationCam");
+
     }
 
     void Update()
     {
         
     }
-
-    public void ObserveCam()
+    
+    public void FindOCC()
     {
-        
+        observationController = GameObject.FindWithTag("ClueObservation");
     }
+
 }

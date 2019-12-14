@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4833922596508026910}
   - component: {fileID: 8233755828258491833}
   - component: {fileID: -7000002329326287666}
-  - component: {fileID: 3549627631899434624}
+  - component: {fileID: -318447896506971506}
   m_Layer: 5
-  m_Name: Clue4
+  m_Name: Sigil ring
   m_TagString: Clue4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3549627631899434624}
-        m_MethodName: ObserveCam
+      - m_Target: {fileID: -318447896506971506}
+        m_MethodName: FindOCC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &3549627631899434624
+--- !u!114 &-318447896506971506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

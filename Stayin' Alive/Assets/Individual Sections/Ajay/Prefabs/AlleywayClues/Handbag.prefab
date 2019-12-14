@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5795514301934898764}
   - component: {fileID: 5344941516964079789}
   - component: {fileID: 3879722558554279438}
-  - component: {fileID: 5529614417412356157}
+  - component: {fileID: -6441628030962460817}
   m_Layer: 5
-  m_Name: Clue3
+  m_Name: Handbag
   m_TagString: Clue3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5529614417412356157}
-        m_MethodName: ObserveCam
+      - m_Target: {fileID: -6441628030962460817}
+        m_MethodName: FindOCC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &5529614417412356157
+--- !u!114 &-6441628030962460817
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

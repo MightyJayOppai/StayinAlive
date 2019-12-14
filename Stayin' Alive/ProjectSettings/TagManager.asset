@@ -56,6 +56,11 @@ TagManager:
   - Clue2Scene
   - Clue3Scene
   - Clue4Scene
+  - ClueObservation
+  - Clue1 (OC)
+  - Clue2 (OC)
+  - Clue3 (OC)
+  - Clue4 (OC)
   layers:
   - Default
   - TransparentFX
