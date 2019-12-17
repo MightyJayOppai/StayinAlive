@@ -3229,7 +3229,7 @@ MonoBehaviour:
   rotationSpeed: 6
   camPos: {fileID: 1096148103}
   Hud: {fileID: 0}
-  mapScene: {fileID: 1076593887}
+  mapScene: {fileID: 0}
   clueCount: 0
   allCollected: 0
 --- !u!136 &97716221
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1076593887}
+      - m_Target: {fileID: 0}
         m_MethodName: MoveToAlleyway
         m_Mode: 1
         m_Arguments:
@@ -10354,7 +10354,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1076593887}
+      - m_Target: {fileID: 0}
         m_MethodName: MoveToHouse
         m_Mode: 1
         m_Arguments:
@@ -20064,7 +20064,7 @@ MonoBehaviour:
   accAlleywayScreen: {fileID: 1147918936}
   accParkScreen: {fileID: 356906718}
   accDocksScreen: {fileID: 1493069234}
-  mapScene: {fileID: 1076593887}
+  mapScene: {fileID: 1926855809}
 --- !u!4 &755059581
 Transform:
   m_ObjectHideFlags: 0
@@ -31728,52 +31728,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075064367}
   m_Mesh: {fileID: 6233701547988556197, guid: 72f2f2ab71c308244b95d20c68b27bc2, type: 3}
---- !u!1 &1076593886
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1076593888}
-  - component: {fileID: 1076593887}
-  m_Layer: 0
-  m_Name: MapSceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1076593887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076593886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd01ece6d98e5c4e871fd16838438b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAlleyway: 0
-  isPark: 0
-  isDocks: 0
---- !u!4 &1076593888
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076593886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.729378, y: 3.4883184, z: -140.76631}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1079437376
 GameObject:
   m_ObjectHideFlags: 0
@@ -40964,7 +40918,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1076593887}
+      - m_Target: {fileID: 0}
         m_MethodName: MoveToDocks
         m_Mode: 1
         m_Arguments:
@@ -52003,7 +51957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 34896661}
-  mapSceneManager: {fileID: 1076593887}
+  mapSceneManager: {fileID: 0}
 --- !u!1 &1829661251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8706848004119948810, guid: 72f2f2ab71c308244b95d20c68b27bc2,
@@ -54331,6 +54285,7 @@ GameObject:
   - component: {fileID: 1891512809}
   - component: {fileID: 1891512808}
   - component: {fileID: 1891512812}
+  - component: {fileID: 1891512813}
   m_Layer: 0
   m_Name: Accused Folder (Docks)
   m_TagString: Untagged
@@ -54426,6 +54381,22 @@ MonoBehaviour:
   accTextBG: {fileID: 1663223126}
   accFilesText: {fileID: 161397252}
   playerCol: {fileID: 0}
+--- !u!114 &1891512813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891512807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661cfe43292f1fd419e6e10d3786e10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accFilesBG: {fileID: 1928077018}
+  accTextBG: {fileID: 716999985}
+  accFilesText: {fileID: 764706398}
+  player: {fileID: 97716216}
 --- !u!1 &1895891780
 GameObject:
   m_ObjectHideFlags: 0
@@ -54942,6 +54913,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926516527}
   m_Mesh: {fileID: -4923006085197552980, guid: 72f2f2ab71c308244b95d20c68b27bc2, type: 3}
+--- !u!1 &1926855808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926855810}
+  - component: {fileID: 1926855809}
+  m_Layer: 0
+  m_Name: MapSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1926855809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926855808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd01ece6d98e5c4e871fd16838438b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlleyway: 0
+  isPark: 0
+  isDocks: 0
+--- !u!4 &1926855810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926855808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.288862, y: 0.40694952, z: -172.79683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928077018
 GameObject:
   m_ObjectHideFlags: 0

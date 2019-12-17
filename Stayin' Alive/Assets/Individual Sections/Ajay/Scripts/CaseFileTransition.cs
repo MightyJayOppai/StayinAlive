@@ -22,7 +22,7 @@ public class CaseFileTransition : MonoBehaviour
         {
             if (transitionTextBG.activeSelf)
             {
-                transitionTextBG.SetActive(!transitionTextBG.activeSelf);
+                transitionTextBG.SetActive(false);
                 sceneTransitionScreen.SetActive(true);
                 //GetComponent<MapSceneManager>().TransitionToAlleyway();
                 //UnityEngine.SceneManagement.SceneManager.LoadScene(2);

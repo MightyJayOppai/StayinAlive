@@ -22,7 +22,7 @@ public class FilesManager : MonoBehaviour
 
     void Update()
     {
-        if (mapScene.isAlleyway = true)
+        if (mapScene.isAlleyway == true)
         {
             alleywayTransition.SetActive(true);
             parkTransition.SetActive(false);
@@ -35,7 +35,7 @@ public class FilesManager : MonoBehaviour
             accDocksScreen.SetActive(false);
         }
 
-        if (mapScene.isPark = true)
+        if (mapScene.isPark == true)
         {
             parkTransition.SetActive(true);
             alleywayTransition.SetActive(false);
@@ -48,7 +48,7 @@ public class FilesManager : MonoBehaviour
             accDocksScreen.SetActive(false);
         }
 
-        if (mapScene.isDocks = true)
+        if (mapScene.isDocks == true)
         {
             docksTransition.SetActive(true);
             alleywayTransition.SetActive(false);
