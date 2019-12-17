@@ -9,9 +9,11 @@ public class Clues : MonoBehaviour
     private bool pickUpAllowed;
     public GameObject clueLogPanel;
     public GameObject[] clueIcons;
+    public HUD Hud;
+    public PlayerController playerController;
     void Start()
     {
-        pickUpText.gameObject.SetActive(false);
+        
     }
 
     void Update()
@@ -19,6 +21,7 @@ public class Clues : MonoBehaviour
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
             PickUp();
+            Hud.CloseMessagePanel();
         }
     }
     void OnTriggerEnter(Collider other)
@@ -26,7 +29,7 @@ public class Clues : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("Player in Range");
-            pickUpText.gameObject.SetActive(true);
+            Hud.OpenMessagePanel("");
             pickUpAllowed = true;
         }
     }
@@ -35,7 +38,7 @@ public class Clues : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("Player has left Range");
-            pickUpText.gameObject.SetActive(false);
+            Hud.CloseMessagePanel();
             pickUpAllowed = false;
         }
     }
@@ -49,12 +52,14 @@ public class Clues : MonoBehaviour
             gameObject.SetActive(false);
             i = Instantiate(clueIcons[0]);
             i.transform.SetParent (clueLogPanel.transform);
+            playerController.clueCount++;
         }
         else if (gameObject.tag == "Clue2")
         {
             gameObject.SetActive(false);
             i = Instantiate(clueIcons[1]);
             i.transform.SetParent (clueLogPanel.transform);
+            playerController.clueCount++;
         }
 
         else if (gameObject.tag == "Clue3")
@@ -62,6 +67,7 @@ public class Clues : MonoBehaviour
             gameObject.SetActive(false);
             i = Instantiate(clueIcons[2]);
             i.transform.SetParent (clueLogPanel.transform);
+            playerController.clueCount++;
         }
 
         else if (gameObject.tag == "Clue4")
@@ -69,7 +75,8 @@ public class Clues : MonoBehaviour
             gameObject.SetActive(false);
             i = Instantiate(clueIcons[3]);
             i.transform.SetParent (clueLogPanel.transform);
-        }
+            playerController.clueCount++;
+        }        
     }
 }
 

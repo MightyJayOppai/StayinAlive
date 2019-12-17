@@ -7,7 +7,10 @@ public class ObservationController : MonoBehaviour
 {
     public GameObject[] observeIcons;
     public GameObject observationCamera;
-    public GameObject clueSpawner;
+    public GameObject clueSpawner;    
+    public GameObject clueLogPanel;
+    public bool isObserved;
+    
     void Start()
     {
         
@@ -15,11 +18,28 @@ public class ObservationController : MonoBehaviour
 
     void Update()
     {
-        
+        if (isObserved && Input.GetKey(KeyCode.Q))
+        {
+            CloseObserveCam();
+        }
     }
 
-    private void ActivateClue()
+    public void ActivateClue(GameObject clue)
     {
-        Instantiate(observeIcons[0], clueSpawner.transform.position, clueSpawner.transform.rotation);
+        Instantiate(clue, clueSpawner.transform.position, clueSpawner.transform.rotation);
+        isObserved = true;
+        OpenObserveCam();      
+    }
+    
+    public void OpenObserveCam()
+    {
+        Time.timeScale = 0f;
+        observationCamera.SetActive(true);
+        clueLogPanel.SetActive(false);
+    }
+    public void CloseObserveCam()
+    {
+        Time.timeScale = 1f;
+        observationCamera.SetActive(false);
     }
 }

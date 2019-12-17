@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class ObserveClues : MonoBehaviour
 {
     private GameObject observationController;
@@ -19,6 +20,7 @@ public class ObserveClues : MonoBehaviour
     public void FindOCC()
     {
         observationController = GameObject.FindWithTag("ClueObservation");
+        observationController.GetComponent<ObservationController>().ActivateClue(observedClue);
     }
 
 }

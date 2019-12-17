@@ -12,9 +12,7 @@ public class CaseFileTransition : MonoBehaviour
     
     void Start()
     {
-        transitionTextBG.SetActive(false);
-        transitionText.SetActive(false);
-        sceneTransitionScreen.SetActive(false);
+        
     }
 
     

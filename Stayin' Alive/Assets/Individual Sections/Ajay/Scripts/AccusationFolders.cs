@@ -9,6 +9,7 @@ public class AccusationFolders : MonoBehaviour
     public GameObject accTextBG;
     public GameObject accFilesText;
     [SerializeField] private Collider playerCol;
+    
     void Start()
     {
         

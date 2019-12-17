@@ -27,9 +27,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform camPos;
 
     Rigidbody rigidBody;
-    public ClueLog clueLog;
     public HUD Hud;
     private Animator anim;
+    public MapSceneManager mapScene;
+    public int clueCount;
+    public bool allCollected;
     void Start()
     {
         charController = GetComponent<CharacterController>();
@@ -79,35 +81,49 @@ public class PlayerController : MonoBehaviour
         }
            charController.Move(playerVector * playerSpeed * Time.deltaTime);
            //transform.position = transform.position + playerVector * playerSpeed * Time.deltaTime;
-            //Debug.Log(playerVector);
 
-        if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
+        if(clueCount == 4)
         {
-            clueLog.AddItem(mItemToPickup);
-            mItemToPickup.OnPickUp();
-            Hud.CloseMessagePanel();
-        }
+            allCollected = true;
+        }   
+        
     }
-    private IClueItem mItemToPickup = null;
     
-    private void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other)
     {
-        IClueItem item = other.GetComponent<IClueItem>();
-        if (item != null)
+        if(other.tag == "BackToOffice")
         {
-            //clueLog.AddItem(item);
-            //item.OnPickUp();
-            mItemToPickup = item;
-            Hud.OpenMessagePanel("");
+            if (allCollected == true && Application.loadedLevelName == "AlleywayScene")
+            {
+                mapScene.MoveToOffice();
+                mapScene.isAlleyway = true;
+                mapScene.isPark = false;
+                mapScene.isDocks = false;
+                DontDestroyOnLoad(mapScene);
+            }
+
+            if (allCollected == true && Application.loadedLevelName == "ParkScene")
+            {
+                mapScene.MoveToOffice();
+                mapScene.isPark = true;
+                mapScene.isAlleyway = false;
+                mapScene.isDocks = false;
+                DontDestroyOnLoad(mapScene);
+            }
+            
+            if (allCollected == true && Application.loadedLevelName == "DocksScene")
+            {
+                mapScene.MoveToOffice();
+                mapScene.isDocks = true;
+                mapScene.isAlleyway = false;
+                mapScene.isPark = false;
+                DontDestroyOnLoad(mapScene);
+            }
+
+            else if (allCollected = false)
+            {
+                Debug.Log("Still missing Clues");
+            }
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        IClueItem item = other.GetComponent<IClueItem>();
-        if (item != null)
-        {
-            mItemToPickup = null;
-            Hud.CloseMessagePanel();
-        }
-    }
+    } 
 }

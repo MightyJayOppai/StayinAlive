@@ -14,6 +14,7 @@ public class FilesManager : MonoBehaviour
     public GameObject accParkScreen;
     public GameObject accDocksScreen;
     public MapSceneManager mapScene;
+    
     void Start()
     {
         
@@ -33,7 +34,8 @@ public class FilesManager : MonoBehaviour
             accParkScreen.SetActive(false);
             accDocksScreen.SetActive(false);
         }
-        else if (mapScene.isPark = true)
+
+        if (mapScene.isPark = true)
         {
             parkTransition.SetActive(true);
             alleywayTransition.SetActive(false);
@@ -45,7 +47,8 @@ public class FilesManager : MonoBehaviour
             accAlleywayScreen.SetActive(false);
             accDocksScreen.SetActive(false);
         }
-        else if (mapScene.isDocks = true)
+
+        if (mapScene.isDocks = true)
         {
             docksTransition.SetActive(true);
             alleywayTransition.SetActive(false);
