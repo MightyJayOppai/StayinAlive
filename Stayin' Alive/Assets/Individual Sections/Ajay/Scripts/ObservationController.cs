@@ -10,7 +10,7 @@ public class ObservationController : MonoBehaviour
     public GameObject clueSpawner;    
     public GameObject clueLogPanel;
     public bool isObserved;
-    
+    public GameObject obj;
     void Start()
     {
         
@@ -26,7 +26,7 @@ public class ObservationController : MonoBehaviour
 
     public void ActivateClue(GameObject clue)
     {
-        Instantiate(clue, clueSpawner.transform.position, clueSpawner.transform.rotation);
+        obj=Instantiate(clue, clueSpawner.transform.position, clueSpawner.transform.rotation);
         isObserved = true;
         OpenObserveCam();      
     }
@@ -41,5 +41,6 @@ public class ObservationController : MonoBehaviour
     {
         Time.timeScale = 1f;
         observationCamera.SetActive(false);
+        Destroy(obj);
     }
 }

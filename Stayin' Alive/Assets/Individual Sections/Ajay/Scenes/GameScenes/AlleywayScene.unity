@@ -7211,7 +7211,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 50}
+  m_Spacing: {x: 0, y: 46}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &497581924
@@ -7267,8 +7267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5983143, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.19152832, y: 0.000061035156}
-  m_SizeDelta: {x: -368.9491, y: -545.3407}
+  m_AnchoredPosition: {x: -0.19152832, y: -0.00018310547}
+  m_SizeDelta: {x: -368.9, y: -494.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &506587478 stripped
 GameObject:
@@ -16473,6 +16473,7 @@ MonoBehaviour:
   clueSpawner: {fileID: 455815608}
   clueLogPanel: {fileID: 497581922}
   isObserved: 0
+  obj: {fileID: 0}
 --- !u!4 &1911990929
 Transform:
   m_ObjectHideFlags: 0
