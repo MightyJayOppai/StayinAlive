@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class MapSceneManager : MonoBehaviour
 {
     public bool isAlleyway;
     public bool isPark;
     public bool isDocks;
+    public GameObject loadingText;
     void Start()
     {
         
@@ -32,6 +34,7 @@ public class MapSceneManager : MonoBehaviour
     public void MoveToOffice()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        loadingText.SetActive(true);
     }
     public void MoveToDocks()
     {
